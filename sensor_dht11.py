@@ -10,14 +10,9 @@ class Dht11:
     def __init__(self):
         self.__humidity, self.__temperature = Adafruit_DHT.read_retry(
             sensor, pin)
-        self.time_date = datetime.now()
 
     def getTemperature(self):
         return str(self.__temperature)
 
     def getHumidity(self):
         return str(self.__humidity)
-
-    def getTimeNow(self):
-        fecha = self.timeDate.strftime("%Y-%m-%d %H:%M:%S")
-        return fecha.replace(" ", "%20")

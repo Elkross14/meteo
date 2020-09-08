@@ -1,4 +1,4 @@
-from sensor_dht11 import Dht11
+from Sensores import Sensores
 import time
 import os
 
@@ -6,7 +6,7 @@ datos = "sin datos"
 
 
 class Main:
-    sensores = Dht11()
+    sensores = Sensores()
     temperaturaStr = sensores.getTemperature()
     humedadStr = sensores.getHumidity()
     fechaStr = sensores.getTimeNow()
