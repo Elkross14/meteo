@@ -8,6 +8,8 @@ puerto_sensor = Button(5)
 contador_viento = 0
 contador_viento_rafaga = 0
 contador_num_rafagas = 0
+vel_max_racha = 0
+vel_med = 0
 
 
 class VelocidadViento:
@@ -26,16 +28,17 @@ class VelocidadViento:
 
         contador_viento = contador_viento + 1
         contador_viento_rafaga = contador_viento_rafaga + 1
-        # print("pulso: " + str(contador_viento))
 
     def medirRafaga(self):
 
         global contador_viento_rafaga
         global contador_num_rafagas
+        global vel_max_racha
 
-        print(str(contador_viento_rafaga) + " pulsos en ráfaga")
+        vel_rafaga = self.calcularVelocidad(contador_viento_rafaga, 20)
 
-        self.calcularVelocidad(contador_viento_rafaga, 20)
+        if vel_rafaga > vel_max_racha:
+            vel_max_racha = vel_rafaga
 
         contador_viento_rafaga = 0
         contador_num_rafagas = contador_num_rafagas + 1
@@ -60,20 +63,29 @@ class VelocidadViento:
 
         print("velocidad = " + str(velocidad_real) + "km/h")
 
+        return velocidad_real
+
     def calcularVelocidadMedia(self):
         global contador_viento
+        global contador_num_rafagas
+        global vel_med
 
         # para saber cuanto tiempo lleva el programa recogiendo datos miramos
         # los ciclos de rachas hecho y los multiplicamos por 20 para obtener
         # los segundos.
         tiempo = contador_num_rafagas * 20
 
-        print("viento medio. Tiempo: " + str(tiempo) +
-              "seg. Pulsos: " + str(contador_viento) + "fecha: " + datetime.now().strftime("%Y-%m-%d %H:%M:%S"))
         # Calculamos la velocidad del viento promedio en km/h
-        self.calcularVelocidad(contador_viento, tiempo)
+        vel_med = self.calcularVelocidad(contador_viento, tiempo)
 
         # reiniciamos el contador para la siguiente hora
         contador_viento = 0
+        contador_num_rafagas = 0
+
+    def getVelMedia(self):
+        return str("{:.3f}".format(vel_med))
+
+    def getVelMaxRacha(self):
+        return str("{:.3f}".format(vel_max_racha))
 
     puerto_sensor.when_pressed = pulso

@@ -25,25 +25,27 @@ class Main:
     luz_infrarroja_tsl2561_str = ""  # en lux
     luz_visible_tsl2561_str = ""  # en lux
 
+    # variables del sensor de viento
+    vel_media_viento_str = ""  # en Km/h
+    vel_racha_viento_str = ""  # en Km/h
+
     def __init__(self):
 
-        self.inicialCiclo()
-
         # sensor de velocidad del viento
-        objeto_sensor_viento = VelocidadViento()
+        self.objeto_sensor_viento = VelocidadViento()
 
         scheda = BackgroundScheduler()
-        scheda.add_job(
-            objeto_sensor_viento.calcularVelocidadMedia, 'cron', minute='*/30')
+        scheda.add_job(self.iniciarCiclo, 'cron', minute='00')
         scheda.start()
 
     # inicia la secuencia de recogida de datos y reseteo de variables
-    def inicialCiclo(self):
+    def iniciarCiclo(self):
         fecha_lectura = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
         print("fecha: " + fecha_lectura)
         self.leerDht11()
         self.leerBmp180()
         self.leerTsl2561()
+        self.leerViento()
 
     def leerDht11(self):
         global dht11_temperatura_str
@@ -75,6 +77,18 @@ class Main:
         luz_total_tsl2561_str = objeto_tsl2561.getLuzTotal()
         luz_infrarroja_tsl2561_str = objeto_tsl2561.getLuzInfrarroja()
         luz_visible_tsl2561_str = objeto_tsl2561.getLuzVisible()
+
+    def leerViento(self):
+        global vel_media_viento_str
+        global vel_racha_viento_str
+
+        self.objeto_sensor_viento.calcularVelocidadMedia()
+
+        vel_media_viento_str = self.objeto_sensor_viento.getVelMedia()
+        vel_racha_viento_str = self.objeto_sensor_viento.getVelMaxRacha()
+
+        # print("Velocidad Media: " + vel_media_viento_str + " Km/H" +
+        #       "\nVelocidad Racha: " + vel_racha_viento_str + " Km/H")
 
 
 meteo = Main()
