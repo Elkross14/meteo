@@ -9,6 +9,7 @@ import time
 
 
 class Tsl2561:
+    '''Lee todos los datos del sensor Tsl2561'''
 
     def __init__(self):
         # Get I2C bus
@@ -37,11 +38,20 @@ class Tsl2561:
         self.luz_total = data[1] * 256 + data[0]
         self.luz_infrarroja = data1[1] * 256 + data1[0]
 
-    def getLuzTotal(self):
+    def get_luz_total(self):
+        '''Devuelve la luz total en Lux sin decimales. Es necesario crear un constructor
+         Tsl2561() para actualizar los datos'''
+
         return str("{:.0f}".format(self.luz_total))
 
-    def getLuzInfrarroja(self):
+    def get_luz_infrarroja(self):
+        '''Devuelve la luz infrarroja en Lux sin decimales. Es necesario crear un constructor
+         Tsl2561() para actualizar los datos'''
+
         return str("{:.0f}".format(self.luz_infrarroja))
 
-    def getLuzVisible(self):
+    def get_luz_visible(self):
+        '''Devuelve la luz visible en Lux sin decimales. Es necesario crear un constructor
+         Tsl2561() para actualizar los datos'''
+
         return str("{:.0f}".format(self.luz_total - self.luz_infrarroja))

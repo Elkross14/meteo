@@ -61,7 +61,7 @@ class VelocidadViento:
         # por el rozamiento del sensor de viento
         velocidad_real = velocidad * 1.18
 
-        print("velocidad = " + str(velocidad_real) + "km/h")
+        # print("velocidad = " + str(velocidad_real) + "km/h")
 
         return velocidad_real
 
