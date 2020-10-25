@@ -24,9 +24,9 @@ class Bmp180:
         return str("{:.0f}".format(self.temperatura))
 
     def get_altura(self):
-        '''Devuelve la altura en metros con un decimal. Es necesario crear un constructor
+        '''Devuelve la altura en metros sin decimales. Es necesario crear un constructor
          Bmp180() para actualizar los datos.
 
          La altura recibida es muy inexacta.'''
 
-        return str("{:.1f}".format(self.altura))
+        return str("{:.0f}".format(self.altura))

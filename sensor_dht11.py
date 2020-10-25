@@ -14,13 +14,13 @@ class Dht11:
             sensor, PIN)
 
     def get_temperature(self):
-        '''Devuleve el valor de la temperatura en ºC. Es necesario crear un constructor
-         Dht11() para actualizar los datos'''
+        '''Devuleve el valor de la temperatura en ºC sin decimales. Es necesario crear un
+        constructor Dht11() para actualizar los datos'''
 
-        return str(self.__temperature)
+        return str("{:.0f}".format(self.__temperature))
 
     def get_humidity(self):
-        '''Devuleve el valor de la humedad en %. Es necesario crear un constructor
+        '''Devuleve el valor de la humedad en % sin decimales. Es necesario crear un constructor
         para actualizar los datos'''
 
-        return str(self.__humidity)
+        return str("{:.0f}".format(self.__humidity))

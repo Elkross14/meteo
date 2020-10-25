@@ -4,46 +4,53 @@ import math
 from gpiozero import Button
 from apscheduler.schedulers.background import BackgroundScheduler
 
-puerto_sensor = Button(5)
+PUERTO_SENSOR = Button(5)
+
 contador_viento = 0
 contador_viento_rafaga = 0
-contador_num_rafagas = 0
-vel_max_racha = 0
-vel_med = 0
 
 
 class VelocidadViento:
+    '''Lee la velocidad del viento en racha y promedio en Km/h. No retorna decimales'''
+
+    vel_med = 0
+    vel_max_racha_comparar = 0
+    vel_max_racha = 0
+    contador_num_rafagas = 0
 
     def __init__(self):
+        '''Inicia un scheduler para recoger las ráfagas de viento cada 20 segundos.'''
 
         # Mide las rafagas de viento cada 20 segundos
         sched = BackgroundScheduler()
-        sched.add_job(self.medirRafaga, 'interval', seconds=20)
+        sched.add_job(self.medir_rafaga, 'interval', seconds=20)
         sched.start()
 
     def pulso(self):
+        '''Suma 1 a los contadores de viento y viento_rafaga cada vez que se ejecuta'''
 
         global contador_viento
         global contador_viento_rafaga
 
-        contador_viento = contador_viento + 1
-        contador_viento_rafaga = contador_viento_rafaga + 1
+        contador_viento += 1
+        contador_viento_rafaga += 1
 
-    def medirRafaga(self):
+    def medir_rafaga(self):
+        '''medirá la velocidad de la ráfaga de viento y lo comparará con la velocidad
+        máxima registrada en racha y la cambiará si la actual es superior.'''
 
         global contador_viento_rafaga
-        global contador_num_rafagas
-        global vel_max_racha
 
-        vel_rafaga = self.calcularVelocidad(contador_viento_rafaga, 20)
+        vel_rafaga = self.calcular_velocidad(contador_viento_rafaga, 20)
 
-        if vel_rafaga > vel_max_racha:
-            vel_max_racha = vel_rafaga
+        if vel_rafaga > self.__class__.vel_max_racha_comparar:
+            self.__class__.vel_max_racha_comparar = vel_rafaga
 
         contador_viento_rafaga = 0
-        contador_num_rafagas = contador_num_rafagas + 1
+        self.__class__.contador_num_rafagas += 1
 
-    def calcularVelocidad(self, contador, intervalo):
+    def calcular_velocidad(self, contador, intervalo):
+        '''Calcula la velocidad del viento ya sea media o de racha.'''
 
         # Calcular la circunferencia del sensor de viento
         circunferencia_cm = (2 * math.pi) * 9.0
@@ -65,27 +72,46 @@ class VelocidadViento:
 
         return velocidad_real
 
-    def calcularVelocidadMedia(self):
-        global contador_viento
-        global contador_num_rafagas
-        global vel_med
+    def calcular_velocidad_media(self):
+        '''Calcula la velocidad media registrada.'''
 
         # para saber cuanto tiempo lleva el programa recogiendo datos miramos
         # los ciclos de rachas hecho y los multiplicamos por 20 para obtener
         # los segundos.
-        tiempo = contador_num_rafagas * 20
+        tiempo = self.__class__.contador_num_rafagas * 20
 
-        # Calculamos la velocidad del viento promedio en km/h
-        vel_med = self.calcularVelocidad(contador_viento, tiempo)
+        # Evitamos que mida entre cero en el caso de que ejecute el comando antes de 20
+        # segundos de haber iniciado el programa.
+        if tiempo != 0:
 
-        # reiniciamos el contador para la siguiente hora
+            # Calculamos la velocidad del viento promedio en km/h
+            self.__class__.vel_med = self.calcular_velocidad(
+                contador_viento, tiempo)
+
+        else:
+            self.__class__.vel_med = 0
+
+    def reiniciar_valores(self):
+        '''Reiniciamos los valores de las variables para empezar de nuevo el siguiente
+        ciclo.'''
+
+        global contador_viento
+
         contador_viento = 0
-        contador_num_rafagas = 0
+        self.__class__.contador_num_rafagas = 0
+        self.__class__.vel_max_racha = self.__class__.vel_max_racha_comparar
+        self.__class__.vel_max_racha_comparar = 0
 
-    def getVelMedia(self):
-        return str("{:.3f}".format(vel_med))
+    def get_vel_media(self):
+        '''Devuelve la velocidad media del viento sin decimales.'''
 
-    def getVelMaxRacha(self):
-        return str("{:.3f}".format(vel_max_racha))
+        return str("{:.0f}".format(self.__class__.vel_med))
 
-    puerto_sensor.when_pressed = pulso
+    def get_vel_max_racha(self):
+        '''Devuelve la racha de viendo con mayor velocidad en el intervalo del
+        tiempo sin decimales'''
+
+        return str("{:.0f}".format(self.__class__.vel_max_racha))
+
+    # Envía un pulso cada vez que el anemómetro da media vuelta.
+    PUERTO_SENSOR.when_pressed = pulso
