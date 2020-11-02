@@ -39,6 +39,9 @@ class Main:
         '''Recoge los datos de todos los sensores y los devuelve en una cadena
         junto a la fecha.'''
 
+        fecha = dht11 = bmp180 = tsl2561 = viento = lluvia = "100"
+        direc = "None"
+
         fecha = self.leer_fecha()
         dht11 = self.leer_dht11()
         bmp180 = self.leer_bmp180()
@@ -67,16 +70,19 @@ class Main:
     def leer_dht11(cls):
         '''Crea el objeto del sensor Dht11 y recoge la temperatura y humedad'''
 
-        objeto_dht11 = Dht11()
+        try:
+            objeto_dht11 = Dht11()
 
-        temperatura_str = objeto_dht11.get_temperature()
-        humedad_str = objeto_dht11.get_humidity()
+            temperatura_str = objeto_dht11.get_temperature()
+            humedad_str = objeto_dht11.get_humidity()
 
-        print("-----------Dht11-----------")
-        print("Temperatura: " + temperatura_str + "ºC")
-        print("Humedad: " + humedad_str + "%")
+            print("-----------Dht11-----------")
+            print("Temperatura: " + temperatura_str + "ºC")
+            print("Humedad: " + humedad_str + "%")
 
-        return temperatura_str + "/" + humedad_str
+            return temperatura_str + "/" + humedad_str
+        except TypeError:
+            print("Dht11 no funciona")
 
     @classmethod
     def leer_bmp180(cls):
