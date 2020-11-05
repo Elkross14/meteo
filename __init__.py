@@ -1,5 +1,6 @@
 from datetime import datetime
 import os
+import atexit
 from apscheduler.schedulers.background import BackgroundScheduler
 
 from sensor_dht11 import Dht11
@@ -15,6 +16,8 @@ class Main:
     servidor'''
 
     def __init__(self):
+
+        atexit.register(print, "Program exited successfully!")
 
         # iniciamos anemometro y pluviometro para que recogan datos
         # hasta la la siguiente hora a las 00 minutos.
@@ -70,19 +73,16 @@ class Main:
     def leer_dht11(cls):
         '''Crea el objeto del sensor Dht11 y recoge la temperatura y humedad'''
 
-        try:
-            objeto_dht11 = Dht11()
+        objeto_dht11 = Dht11()
 
-            temperatura_str = objeto_dht11.get_temperature()
-            humedad_str = objeto_dht11.get_humidity()
+        temperatura_str = objeto_dht11.get_temperature()
+        humedad_str = objeto_dht11.get_humidity()
 
-            print("-----------Dht11-----------")
-            print("Temperatura: " + temperatura_str + "ºC")
-            print("Humedad: " + humedad_str + "%")
+        print("-----------Dht11-----------")
+        print("Temperatura: " + temperatura_str + "ºC")
+        print("Humedad: " + humedad_str + "%")
 
-            return temperatura_str + "/" + humedad_str
-        except TypeError:
-            print("Dht11 no funciona")
+        return temperatura_str + "/" + humedad_str
 
     @classmethod
     def leer_bmp180(cls):
@@ -168,9 +168,11 @@ class Main:
         url = "pabloduran.es/recibirdatos/hYlkg6Io/" + link
         print("URL: " + url)
 
-        command_line = 'DISPLAY=:0 chromium-browser ' + url + '2>/dev/null'
+        command_line = 'DISPLAY=:0 firefox ' + url + ' &'
 
         os.system(command_line)
 
 
 meteo = Main()
+
+input()

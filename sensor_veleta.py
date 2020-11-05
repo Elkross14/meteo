@@ -17,13 +17,18 @@ class Veleta:
         # Crea un bus I2C
         i2c = busio.I2C(board.SCL, board.SDA)
 
-        # Crea un objeto ADC usando el bus I2C
-        ads = ADS.ADS1115(i2c)
+        try:
+            # Crea un objeto ADC usando el bus I2C
+            ads = ADS.ADS1115(i2c)
 
-        # Entrada del canal 0 del chip
-        chan = AnalogIn(ads, ADS.P0)
+            # Entrada del canal 0 del chip
+            chan = AnalogIn(ads, ADS.P0)
 
-        voltaje = chan.voltage
+            voltaje = chan.voltage
+
+        # Recoge el error de lectura del canal SDA
+        except ValueError:
+            voltaje = 0
 
         return voltaje
 

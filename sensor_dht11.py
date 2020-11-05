@@ -17,10 +17,19 @@ class Dht11:
         '''Devuleve el valor de la temperatura en ºC sin decimales. Es necesario crear un
         constructor Dht11() para actualizar los datos'''
 
-        return str("{:.0f}".format(self.__temperature))
+        try:
+            return str("{:.0f}".format(self.__temperature))
+
+        # Recogerá el error de lectura del sensor en caso de que no funcione
+        except TypeError:
+            return str("{:.0f}".format(0))
 
     def get_humidity(self):
         '''Devuleve el valor de la humedad en % sin decimales. Es necesario crear un constructor
         para actualizar los datos'''
 
-        return str("{:.0f}".format(self.__humidity))
+        try:
+            return str("{:.0f}".format(self.__humidity))
+
+        except TypeError:
+            return str("{:.0f}".format(0))
