@@ -1,6 +1,7 @@
 from datetime import datetime
 import os
-import atexit
+import logging
+import time
 from apscheduler.schedulers.background import BackgroundScheduler
 
 from sensor_dht11 import Dht11
@@ -17,7 +18,8 @@ class Main:
 
     def __init__(self):
 
-        atexit.register(print, "Program exited successfully!")
+        logging.basicConfig(filename='registro.log',
+                            filemode='w', level=logging.DEBUG, format='%(asctime)s %(message)s')
 
         # iniciamos anemometro y pluviometro para que recogan datos
         # hasta la la siguiente hora a las 00 minutos.
@@ -27,8 +29,7 @@ class Main:
         self.iniciar_ciclo()
 
         scheda = BackgroundScheduler()
-        # scheda.add_job(self.iniciar_ciclo, 'cron', minute='40')
-        scheda.add_job(self.iniciar_ciclo, 'interval', seconds=60)
+        scheda.add_job(self.iniciar_ciclo, 'cron', minute='00')
         scheda.start()
 
     def iniciar_ciclo(self):
@@ -37,6 +38,10 @@ class Main:
         link = self.recoger_datos()
 
         self.enviar_datos(link)
+
+        time.sleep(1800)
+
+        self.cerrar_navegador()
 
     def recoger_datos(self):
         '''Recoge los datos de todos los sensores y los devuelve en una cadena
@@ -172,7 +177,13 @@ class Main:
 
         os.system(command_line)
 
+    def cerrar_navegador(self):
+        '''Cierra el navegado que se está usando para enviar los datos'''
+
+        os.system("pkill firefox")
+
 
 meteo = Main()
 
-input()
+while True:
+    time.sleep(10)
