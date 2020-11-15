@@ -18,16 +18,17 @@ class Main:
 
     def __init__(self):
 
-        logging.basicConfig(filename='registro.log',
-                            filemode='w', level=logging.DEBUG, format='%(asctime)s %(message)s')
+        # nos guarda toda la información de lo ocurridoe en el programa
+        logging.basicConfig(filename='~/Meteo/registro.log',
+                            level=logging.DEBUG,
+                            format='%(asctime)s %(message)s')
 
-        # iniciamos anemometro y pluviometro para que recogan datos
+        # iniciamos anemometro y pluviometro para que recojan datos
         # hasta la la siguiente hora a las 00 minutos.
         self.objeto_sensor_viento = VelocidadViento()
         self.objeto_sensor_lluvia = Pluviometro()
 
-        self.iniciar_ciclo()
-
+        # Inicia la recogida de datos y envío cada hora
         scheda = BackgroundScheduler()
         scheda.add_job(self.iniciar_ciclo, 'cron', minute='00')
         scheda.start()
