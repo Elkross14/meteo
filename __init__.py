@@ -4,7 +4,7 @@ import logging
 import time
 from apscheduler.schedulers.background import BackgroundScheduler
 
-from sensor_dht11 import Dht11
+from sensor_dht22 import Dht22
 from sensor_bmp180 import Bmp180
 from sensor_tsl2561 import Tsl2561
 from sensor_veleta import Veleta
@@ -19,7 +19,7 @@ class Main:
     def __init__(self):
 
         # nos guarda toda la información de lo ocurridoe en el programa
-        logging.basicConfig(filename='~/Meteo/registro.log',
+        logging.basicConfig(filename='registro.log',
                             level=logging.DEBUG,
                             format='%(asctime)s %(message)s')
 
@@ -27,6 +27,8 @@ class Main:
         # hasta la la siguiente hora a las 00 minutos.
         self.objeto_sensor_viento = VelocidadViento()
         self.objeto_sensor_lluvia = Pluviometro()
+
+        self.iniciar_ciclo()
 
         # Inicia la recogida de datos y envío cada hora
         scheda = BackgroundScheduler()
@@ -48,18 +50,18 @@ class Main:
         '''Recoge los datos de todos los sensores y los devuelve en una cadena
         junto a la fecha.'''
 
-        fecha = dht11 = bmp180 = tsl2561 = viento = lluvia = "100"
+        fecha = dht22 = bmp180 = tsl2561 = viento = lluvia = "100"
         direc = "None"
 
         fecha = self.leer_fecha()
-        dht11 = self.leer_dht11()
+        dht22 = self.leer_dht22()
         bmp180 = self.leer_bmp180()
         tsl2561 = self.leer_tsl2561()
         direc = self.leer_direccion_viento()
         viento = self.leer_viento()
         lluvia = self.leer_lluvia()
 
-        link = fecha + "/" + dht11 + "/" + bmp180 + "/" + \
+        link = fecha + "/" + dht22 + "/" + bmp180 + "/" + \
             tsl2561 + "/" + viento + "/" + direc + "/" + lluvia
 
         return link
@@ -76,15 +78,15 @@ class Main:
         return fecha_lectura.replace(" ", "%20")
 
     @classmethod
-    def leer_dht11(cls):
-        '''Crea el objeto del sensor Dht11 y recoge la temperatura y humedad'''
+    def leer_dht22(cls):
+        '''Crea el objeto del sensor Dht22 y recoge la temperatura y humedad'''
 
-        objeto_dht11 = Dht11()
+        objeto_dht22 = Dht22()
 
-        temperatura_str = objeto_dht11.get_temperature()
-        humedad_str = objeto_dht11.get_humidity()
+        temperatura_str = objeto_dht22.get_temperature()
+        humedad_str = objeto_dht22.get_humidity()
 
-        print("-----------Dht11-----------")
+        print("-----------Dht22-----------")
         print("Temperatura: " + temperatura_str + "ºC")
         print("Humedad: " + humedad_str + "%")
 

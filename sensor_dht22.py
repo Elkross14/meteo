@@ -1,21 +1,21 @@
 import Adafruit_DHT
 
-sensor = Adafruit_DHT.DHT11
+sensor = Adafruit_DHT.DHT22
 PIN = 18
 
 
-class Dht11:
-    '''Lee todos los datos del sensor Dht11'''
+class Dht22:
+    '''Lee todos los datos del sensor Dht22'''
 
     def __init__(self):
-        '''Recoge los datos de temperatura y humedad del sensor DHT11'''
+        '''Recoge los datos de temperatura y humedad del sensor DHT22'''
 
         self.__humidity, self.__temperature = Adafruit_DHT.read_retry(
             sensor, PIN)
 
     def get_temperature(self):
         '''Devuleve el valor de la temperatura en ºC sin decimales. Es necesario crear un
-        constructor Dht11() para actualizar los datos'''
+        constructor Dht22() para actualizar los datos'''
 
         try:
             return str("{:.0f}".format(self.__temperature))

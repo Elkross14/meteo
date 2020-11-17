@@ -1,6 +1,7 @@
 import Adafruit_DHT
+import time
 
-sensor = Adafruit_DHT.DHT11
+sensor = Adafruit_DHT.DHT22
 pin = 18
 
 
@@ -19,7 +20,10 @@ class Sensores:
         return str(self.__humidity)
 
 
-objeto_sensor = Sensores()
+while True:
 
-print("Temperatura: " + objeto_sensor.getTemperature() + "ºC")
-print("Humedad: " + objeto_sensor.getHumidity() + "%")
+    objeto_sensor = Sensores()
+
+    print("Temperatura: " + objeto_sensor.getTemperature() +
+          "ºC" + " | Humedad: " + objeto_sensor.getHumidity() + "%")
+    time.sleep(2)
