@@ -1,6 +1,6 @@
 from gpiozero import Button
 
-PUERTO_SENSOR = Button(6)
+PUERTO_SENSOR = Button(5)
 TAMANO_CUBETA = 0.2794
 contador = 0
 
@@ -30,7 +30,7 @@ class Pluviometro:
         '''Devuelve los litros de agua acumulados en un metro cúbico
         con un solo decimal.'''
 
-        return str("{:.1f}".format(self.__class__.litros))
+        return str(round(self.__class__.litros, 1))
 
     def reiniciar_valores(self):
         '''Reiniciamos los valores de las variables para empezar de nuevo el siguiente

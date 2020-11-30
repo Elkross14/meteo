@@ -23,13 +23,13 @@ class Bmp180:
         '''Devuelve la presión en hPa sin decimales. Es necesario crear un constructor
          Bmp180() para actualizar los datos'''
 
-        return str("{:.0f}".format(self.atm))
+        return str(round(self.atm))
 
     def get_temperatura(self):
         '''Devuelve la temperatura en ºC sin decimales. Es necesario crear un constructor
          Bmp180() para actualizar los datos'''
 
-        return str("{:.0f}".format(self.temperatura))
+        return str(round(self.temperatura))
 
     def get_altura(self):
         '''Devuelve la altura en metros sin decimales. Es necesario crear un constructor
@@ -37,4 +37,4 @@ class Bmp180:
 
          La altura recibida es muy inexacta.'''
 
-        return str("{:.0f}".format(self.altura))
+        return str(round(self.altura))

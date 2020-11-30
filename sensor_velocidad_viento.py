@@ -4,7 +4,7 @@ import math
 from gpiozero import Button
 from apscheduler.schedulers.background import BackgroundScheduler
 
-PUERTO_SENSOR = Button(5)
+PUERTO_SENSOR = Button(6)
 
 contador_viento = 0
 contador_viento_rafaga = 0
@@ -105,13 +105,13 @@ class VelocidadViento:
     def get_vel_media(self):
         '''Devuelve la velocidad media del viento sin decimales.'''
 
-        return str("{:.0f}".format(self.__class__.vel_med))
+        return str(round(self.__class__.vel_med))
 
     def get_vel_max_racha(self):
         '''Devuelve la racha de viendo con mayor velocidad en el intervalo del
         tiempo sin decimales'''
 
-        return str("{:.0f}".format(self.__class__.vel_max_racha))
+        return str(round(self.__class__.vel_max_racha))
 
     # Envía un pulso cada vez que el anemómetro da media vuelta.
     PUERTO_SENSOR.when_pressed = pulso

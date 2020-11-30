@@ -1,6 +1,6 @@
 from gpiozero import Button
 
-puerto_sensor = Button(6)
+puerto_sensor = Button(5)
 TAMANO_CUBETA = 0.2794
 contador = 0
 

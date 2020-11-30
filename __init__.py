@@ -28,8 +28,6 @@ class Main:
         self.objeto_sensor_viento = VelocidadViento()
         self.objeto_sensor_lluvia = Pluviometro()
 
-        self.iniciar_ciclo()
-
         # Inicia la recogida de datos y envío cada hora
         scheda = BackgroundScheduler()
         scheda.add_job(self.iniciar_ciclo, 'cron', minute='00')

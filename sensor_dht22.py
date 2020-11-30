@@ -18,18 +18,18 @@ class Dht22:
         constructor Dht22() para actualizar los datos'''
 
         try:
-            return str("{:.0f}".format(self.__temperature))
+            return str(round(self.__temperature))
 
         # Recogerá el error de lectura del sensor en caso de que no funcione
         except TypeError:
-            return str("{:.0f}".format(0))
+            return str(round(0))
 
     def get_humidity(self):
         '''Devuleve el valor de la humedad en % sin decimales. Es necesario crear un constructor
         para actualizar los datos'''
 
         try:
-            return str("{:.0f}".format(self.__humidity))
+            return str(round(self.__humidity))
 
         except TypeError:
-            return str("{:.0f}".format(0))
+            return str(round(0))

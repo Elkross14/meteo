@@ -49,16 +49,16 @@ class Tsl2561:
         '''Devuelve la luz total en Lux sin decimales. Es necesario crear un constructor
          Tsl2561() para actualizar los datos'''
 
-        return str("{:.0f}".format(self.luz_total))
+        return str(round(self.luz_total))
 
     def get_luz_infrarroja(self):
         '''Devuelve la luz infrarroja en Lux sin decimales. Es necesario crear un constructor
          Tsl2561() para actualizar los datos'''
 
-        return str("{:.0f}".format(self.luz_infrarroja))
+        return str(round(self.luz_infrarroja))
 
     def get_luz_visible(self):
         '''Devuelve la luz visible en Lux sin decimales. Es necesario crear un constructor
          Tsl2561() para actualizar los datos'''
 
-        return str("{:.0f}".format(self.luz_total - self.luz_infrarroja))
+        return str(round(self.luz_total - self.luz_infrarroja))
