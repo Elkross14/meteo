@@ -79,10 +79,18 @@ class Main:
     def leer_dht22(cls):
         '''Crea el objeto del sensor Dht22 y recoge la temperatura y humedad'''
 
-        objeto_dht22 = Dht22()
+        # Usamos un bucle para que repita la lectura de la temperatura y humedad
+        # en el caso de que se por error muestre una humedad mayor a 100% o menor a 0%
+        while True:
+            objeto_dht22 = Dht22()
 
-        temperatura_str = objeto_dht22.get_temperature()
-        humedad_str = objeto_dht22.get_humidity()
+            temperatura_str = objeto_dht22.get_temperature()
+            humedad_str = objeto_dht22.get_humidity()
+
+            if (int(humedad_str) > 0 and int(humedad_str) < 100):
+                break
+
+            time.sleep(2)
 
         print("-----------Dht22-----------")
         print("Temperatura: " + temperatura_str + "ºC")
