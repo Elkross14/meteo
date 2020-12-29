@@ -9,7 +9,9 @@ class Bmp180:
         try:
             sensor = BMP085.BMP085()
 
-            self.atm = sensor.read_pressure() / 100
+            # Se le suma 8 a la presión porque tras meses de pruebas se observa que
+            # el sensor venia mal calibrado.
+            self.atm = (sensor.read_pressure() / 100) + 8
             self.temperatura = sensor.read_temperature()
             self.altura = sensor.read_altitude()
 
@@ -34,7 +36,6 @@ class Bmp180:
     def get_altura(self):
         '''Devuelve la altura en metros sin decimales. Es necesario crear un constructor
          Bmp180() para actualizar los datos.
-
          La altura recibida es muy inexacta.'''
 
         return str(round(self.altura))

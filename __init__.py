@@ -20,7 +20,7 @@ class Main:
 
         # nos guarda toda la información de lo ocurridoe en el programa
         logging.basicConfig(filename='registro.log',
-                            level=logging.DEBUG,
+                            level=logging.INFO,
                             format='%(asctime)s %(message)s')
 
         # iniciamos anemometro y pluviometro para que recojan datos
@@ -52,7 +52,8 @@ class Main:
         direc = "None"
 
         fecha = self.leer_fecha()
-        dht22 = self.leer_dht22()
+        # dht22 = self.leer_dht22()
+        dht22 = "0/0"
         bmp180 = self.leer_bmp180()
         tsl2561 = self.leer_tsl2561()
         direc = self.leer_direccion_viento()
@@ -81,16 +82,16 @@ class Main:
 
         # Usamos un bucle para que repita la lectura de la temperatura y humedad
         # en el caso de que se por error muestre una humedad mayor a 100% o menor a 0%
-        while True:
-            objeto_dht22 = Dht22()
+       #  while True:
+        objeto_dht22 = Dht22()
 
-            temperatura_str = objeto_dht22.get_temperature()
-            humedad_str = objeto_dht22.get_humidity()
+        temperatura_str = objeto_dht22.get_temperature()
+        humedad_str = objeto_dht22.get_humidity()
 
-            if (int(humedad_str) > 0 and int(humedad_str) < 100):
-                break
+        # if (int(humedad_str) > 0 and int(humedad_str) < 100):
+        # break
 
-            time.sleep(2)
+        # time.sleep(2)
 
         print("-----------Dht22-----------")
         print("Temperatura: " + temperatura_str + "ºC")

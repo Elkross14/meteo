@@ -19,11 +19,11 @@ class VelocidadViento:
     contador_num_rafagas = 0
 
     def __init__(self):
-        '''Inicia un scheduler para recoger las ráfagas de viento cada 20 segundos.'''
+        '''Inicia un scheduler para recoger las ráfagas de viento cada 5 segundos.'''
 
-        # Mide las rafagas de viento cada 20 segundos
+        # Mide las rafagas de viento cada 5 segundos
         sched = BackgroundScheduler()
-        sched.add_job(self.medir_rafaga, 'interval', seconds=20)
+        sched.add_job(self.medir_rafaga, 'interval', seconds=5)
         sched.start()
 
     def pulso(self):
@@ -41,7 +41,7 @@ class VelocidadViento:
 
         global contador_viento_rafaga
 
-        vel_rafaga = self.calcular_velocidad(contador_viento_rafaga, 20)
+        vel_rafaga = self.calcular_velocidad(contador_viento_rafaga, 5)
 
         if vel_rafaga > self.__class__.vel_max_racha_comparar:
             self.__class__.vel_max_racha_comparar = vel_rafaga
@@ -76,11 +76,11 @@ class VelocidadViento:
         '''Calcula la velocidad media registrada.'''
 
         # para saber cuanto tiempo lleva el programa recogiendo datos miramos
-        # los ciclos de rachas hecho y los multiplicamos por 20 para obtener
+        # los ciclos de rachas hecho y los multiplicamos por 5 para obtener
         # los segundos.
-        tiempo = self.__class__.contador_num_rafagas * 20
+        tiempo = self.__class__.contador_num_rafagas * 5
 
-        # Evitamos que mida entre cero en el caso de que ejecute el comando antes de 20
+        # Evitamos que mida entre cero en el caso de que ejecute el comando antes de 5
         # segundos de haber iniciado el programa.
         if tiempo != 0:
 
