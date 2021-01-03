@@ -1,0 +1,602 @@
+2020-12-18 20:51:29,394 Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2020-12-18 20:51:29,397 Added job "VelocidadViento.medir_rafaga" to job store "default"
+2020-12-18 20:51:29,397 Scheduler started
+2020-12-18 20:51:49,395 Running job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-18 20:51:49 CET)" (scheduled at 2020-12-18 20:51:49.393369+01:00)
+2020-12-18 20:51:49,396 Job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-18 20:52:09 CET)" executed successfully
+2020-12-18 20:52:09,397 Running job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-18 20:52:09 CET)" (scheduled at 2020-12-18 20:52:09.393369+01:00)
+2020-12-18 20:52:09,398 Job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-18 20:52:09 CET)" executed successfully
+2020-12-18 20:52:13,055 Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2020-12-18 20:52:13,058 Added job "VelocidadViento.medir_rafaga" to job store "default"
+2020-12-18 20:52:13,058 Scheduler started
+2020-12-18 20:52:33,057 Running job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-18 20:52:33 CET)" (scheduled at 2020-12-18 20:52:33.054318+01:00)
+2020-12-18 20:52:33,059 Job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-18 20:52:53 CET)" executed successfully
+2020-12-18 20:54:12,953 Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2020-12-18 20:54:12,956 Added job "VelocidadViento.medir_rafaga" to job store "default"
+2020-12-18 20:54:12,956 Scheduler started
+2020-12-29 13:55:01,750 Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2020-12-29 13:55:01,754 Added job "VelocidadViento.medir_rafaga" to job store "default"
+2020-12-29 13:55:01,755 Scheduler started
+2020-12-29 17:43:45,678 Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2020-12-29 17:43:45,682 Added job "VelocidadViento.medir_rafaga" to job store "default"
+2020-12-29 17:43:45,683 Scheduler started
+2020-12-29 17:44:05,680 Running job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 17:44:05 CET)" (scheduled at 2020-12-29 17:44:05.677608+01:00)
+2020-12-29 17:44:05,682 Job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 17:44:25 CET)" executed successfully
+2020-12-29 17:44:25,682 Running job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 17:44:25 CET)" (scheduled at 2020-12-29 17:44:25.677608+01:00)
+2020-12-29 17:44:25,683 Job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 17:44:25 CET)" executed successfully
+2020-12-29 17:44:45,685 Running job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 17:44:45 CET)" (scheduled at 2020-12-29 17:44:45.677608+01:00)
+2020-12-29 17:44:45,688 Job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 17:45:05 CET)" executed successfully
+2020-12-29 17:45:01,489 Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2020-12-29 17:45:01,493 Added job "VelocidadViento.medir_rafaga" to job store "default"
+2020-12-29 17:45:01,493 Scheduler started
+2020-12-29 17:45:21,491 Running job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 17:45:21 CET)" (scheduled at 2020-12-29 17:45:21.488538+01:00)
+2020-12-29 17:45:21,493 Job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 17:45:41 CET)" executed successfully
+2020-12-29 17:45:41,494 Running job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 17:45:41 CET)" (scheduled at 2020-12-29 17:45:41.488538+01:00)
+2020-12-29 17:45:41,497 Job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 17:46:01 CET)" executed successfully
+2020-12-29 17:46:02,661 Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2020-12-29 17:46:02,664 Added job "VelocidadViento.medir_rafaga" to job store "default"
+2020-12-29 17:46:02,666 Scheduler started
+2020-12-29 17:46:22,663 Running job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 17:46:22 CET)" (scheduled at 2020-12-29 17:46:22.660735+01:00)
+2020-12-29 17:46:22,668 Job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 17:46:42 CET)" executed successfully
+2020-12-29 17:46:42,666 Running job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 17:46:42 CET)" (scheduled at 2020-12-29 17:46:42.660735+01:00)
+2020-12-29 17:46:42,669 Job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 17:47:02 CET)" executed successfully
+2020-12-29 17:47:02,666 Running job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 17:47:02 CET)" (scheduled at 2020-12-29 17:47:02.660735+01:00)
+2020-12-29 17:47:02,670 Job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 17:47:02 CET)" executed successfully
+2020-12-29 17:47:22,669 Running job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 17:47:22 CET)" (scheduled at 2020-12-29 17:47:22.660735+01:00)
+2020-12-29 17:47:22,672 Job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 17:47:42 CET)" executed successfully
+2020-12-29 17:48:36,365 Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2020-12-29 17:48:36,368 Added job "VelocidadViento.medir_rafaga" to job store "default"
+2020-12-29 17:48:36,369 Scheduler started
+2020-12-29 17:48:56,367 Running job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 17:48:56 CET)" (scheduled at 2020-12-29 17:48:56.364442+01:00)
+2020-12-29 17:48:56,369 Job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 17:49:16 CET)" executed successfully
+2020-12-29 17:49:16,370 Running job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 17:49:16 CET)" (scheduled at 2020-12-29 17:49:16.364442+01:00)
+2020-12-29 17:49:16,371 Job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 17:49:16 CET)" executed successfully
+2020-12-29 17:49:36,373 Running job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 17:49:36 CET)" (scheduled at 2020-12-29 17:49:36.364442+01:00)
+2020-12-29 17:49:36,375 Job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 17:49:36 CET)" executed successfully
+2020-12-29 17:49:56,374 Running job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 17:49:56 CET)" (scheduled at 2020-12-29 17:49:56.364442+01:00)
+2020-12-29 17:49:56,375 Job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 17:49:56 CET)" executed successfully
+2020-12-29 17:50:06,581 Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2020-12-29 17:50:06,584 Added job "VelocidadViento.medir_rafaga" to job store "default"
+2020-12-29 17:50:06,585 Scheduler started
+2020-12-29 17:51:41,815 Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2020-12-29 17:51:41,819 Added job "VelocidadViento.medir_rafaga" to job store "default"
+2020-12-29 17:51:41,820 Scheduler started
+2020-12-29 17:54:16,773 Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2020-12-29 17:54:16,777 Added job "VelocidadViento.medir_rafaga" to job store "default"
+2020-12-29 17:54:16,778 Scheduler started
+2020-12-29 17:54:35,133 Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2020-12-29 17:54:35,137 Added job "VelocidadViento.medir_rafaga" to job store "default"
+2020-12-29 17:54:35,138 Scheduler started
+2020-12-29 17:55:09,671 Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2020-12-29 17:55:09,674 Added job "VelocidadViento.medir_rafaga" to job store "default"
+2020-12-29 17:55:09,675 Scheduler started
+2020-12-29 17:55:24,677 Tiempo excedido para leer DHT22
+2020-12-29 17:55:29,672 Running job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 17:55:29 CET)" (scheduled at 2020-12-29 17:55:29.670380+01:00)
+2020-12-29 17:55:29,674 Job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 17:55:49 CET)" executed successfully
+2020-12-29 17:55:49,675 Running job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 17:55:49 CET)" (scheduled at 2020-12-29 17:55:49.670380+01:00)
+2020-12-29 17:55:50,982 Job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 17:56:09 CET)" executed successfully
+2020-12-29 17:56:09,679 Running job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 17:56:09 CET)" (scheduled at 2020-12-29 17:56:09.670380+01:00)
+2020-12-29 17:56:09,681 Job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 17:56:09 CET)" executed successfully
+2020-12-29 17:56:29,679 Running job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 17:56:29 CET)" (scheduled at 2020-12-29 17:56:29.670380+01:00)
+2020-12-29 17:56:29,680 Job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 17:56:29 CET)" executed successfully
+2020-12-29 17:56:49,676 Running job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 17:56:49 CET)" (scheduled at 2020-12-29 17:56:49.670380+01:00)
+2020-12-29 17:56:49,678 Job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 17:56:49 CET)" executed successfully
+2020-12-29 17:57:09,677 Running job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 17:57:09 CET)" (scheduled at 2020-12-29 17:57:09.670380+01:00)
+2020-12-29 17:57:09,679 Job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 17:57:29 CET)" executed successfully
+2020-12-29 18:07:05,181 Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2020-12-29 18:07:05,185 Added job "VelocidadViento.medir_rafaga" to job store "default"
+2020-12-29 18:07:05,187 Scheduler started
+2020-12-29 18:07:05,210 Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2020-12-29 18:07:05,212 Added job "Main.iniciar_ciclo" to job store "default"
+2020-12-29 18:07:05,212 Scheduler started
+2020-12-29 18:07:41,074 Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2020-12-29 18:07:41,078 Added job "VelocidadViento.medir_rafaga" to job store "default"
+2020-12-29 18:07:41,078 Scheduler started
+2020-12-29 18:07:56,081 Tiempo excedido para leer DHT22
+2020-12-29 18:08:01,076 Running job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 18:08:01 CET)" (scheduled at 2020-12-29 18:08:01.074176+01:00)
+2020-12-29 18:08:01,079 Job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 18:08:21 CET)" executed successfully
+2020-12-29 18:08:21,080 Running job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 18:08:21 CET)" (scheduled at 2020-12-29 18:08:21.074176+01:00)
+2020-12-29 18:08:22,410 Job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 18:08:41 CET)" executed successfully
+2020-12-29 18:08:41,079 Running job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 18:08:41 CET)" (scheduled at 2020-12-29 18:08:41.074176+01:00)
+2020-12-29 18:08:41,082 Job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 18:09:01 CET)" executed successfully
+2020-12-29 18:09:01,079 Running job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 18:09:01 CET)" (scheduled at 2020-12-29 18:09:01.074176+01:00)
+2020-12-29 18:09:01,563 Job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 18:09:21 CET)" executed successfully
+2020-12-29 18:09:21,077 Running job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 18:09:21 CET)" (scheduled at 2020-12-29 18:09:21.074176+01:00)
+2020-12-29 18:09:21,078 Job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 18:09:41 CET)" executed successfully
+2020-12-29 18:09:41,077 Running job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 18:09:41 CET)" (scheduled at 2020-12-29 18:09:41.074176+01:00)
+2020-12-29 18:09:41,079 Job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 18:10:01 CET)" executed successfully
+2020-12-29 19:40:09,785 Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2020-12-29 19:40:09,791 Added job "VelocidadViento.medir_rafaga" to job store "default"
+2020-12-29 19:40:09,792 Scheduler started
+2020-12-29 19:40:29,786 Running job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 19:40:29 CET)" (scheduled at 2020-12-29 19:40:29.784304+01:00)
+2020-12-29 19:40:29,789 Job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 19:40:49 CET)" executed successfully
+2020-12-29 19:40:42,333 Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2020-12-29 19:40:42,337 Added job "VelocidadViento.medir_rafaga" to job store "default"
+2020-12-29 19:40:42,337 Scheduler started
+2020-12-29 19:41:02,335 Running job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 19:41:02 CET)" (scheduled at 2020-12-29 19:41:02.333219+01:00)
+2020-12-29 19:41:02,338 Job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 19:41:22 CET)" executed successfully
+2020-12-29 19:41:22,338 Running job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 19:41:22 CET)" (scheduled at 2020-12-29 19:41:22.333219+01:00)
+2020-12-29 19:41:22,340 Job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 19:41:22 CET)" executed successfully
+2020-12-29 19:41:28,985 Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2020-12-29 19:41:28,988 Added job "VelocidadViento.medir_rafaga" to job store "default"
+2020-12-29 19:41:28,989 Scheduler started
+2020-12-29 19:41:48,986 Running job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 19:41:48 CET)" (scheduled at 2020-12-29 19:41:48.984545+01:00)
+2020-12-29 19:41:48,987 Job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 19:42:08 CET)" executed successfully
+2020-12-29 19:42:08,988 Running job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 19:42:08 CET)" (scheduled at 2020-12-29 19:42:08.984545+01:00)
+2020-12-29 19:42:08,989 Job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 19:42:08 CET)" executed successfully
+2020-12-29 19:42:13,785 Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2020-12-29 19:42:13,790 Added job "VelocidadViento.medir_rafaga" to job store "default"
+2020-12-29 19:42:13,791 Scheduler started
+2020-12-29 19:42:33,786 Running job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 19:42:33 CET)" (scheduled at 2020-12-29 19:42:33.784954+01:00)
+2020-12-29 19:42:33,788 Job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 19:42:53 CET)" executed successfully
+2020-12-29 19:42:42,361 Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2020-12-29 19:42:42,365 Added job "VelocidadViento.medir_rafaga" to job store "default"
+2020-12-29 19:42:42,366 Scheduler started
+2020-12-29 19:42:57,375 El sensor DHT22 dejó de funcionar
+2020-12-29 19:43:02,431 Running job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 19:43:02 CET)" (scheduled at 2020-12-29 19:43:02.360490+01:00)
+2020-12-29 19:43:02,444 Job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 19:43:22 CET)" executed successfully
+2020-12-29 19:43:14,379 El sensor DHT22 dejó de funcionar
+2020-12-29 19:43:22,365 Running job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 19:43:22 CET)" (scheduled at 2020-12-29 19:43:22.360490+01:00)
+2020-12-29 19:43:22,367 Job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 19:43:22 CET)" executed successfully
+2020-12-29 19:43:31,382 El sensor DHT22 dejó de funcionar
+2020-12-29 19:43:42,367 Running job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 19:43:42 CET)" (scheduled at 2020-12-29 19:43:42.360490+01:00)
+2020-12-29 19:43:42,370 Job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 19:44:02 CET)" executed successfully
+2020-12-29 19:43:48,385 El sensor DHT22 dejó de funcionar
+2020-12-29 19:44:02,366 Running job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 19:44:02 CET)" (scheduled at 2020-12-29 19:44:02.360490+01:00)
+2020-12-29 19:44:02,369 Job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 19:44:22 CET)" executed successfully
+2020-12-29 19:44:05,388 El sensor DHT22 dejó de funcionar
+2020-12-29 19:44:22,366 Running job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 19:44:22 CET)" (scheduled at 2020-12-29 19:44:22.360490+01:00)
+2020-12-29 19:44:22,369 Job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 19:44:22 CET)" executed successfully
+2020-12-29 19:44:22,392 El sensor DHT22 dejó de funcionar
+2020-12-29 19:44:39,395 El sensor DHT22 dejó de funcionar
+2020-12-29 19:44:42,369 Running job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 19:44:42 CET)" (scheduled at 2020-12-29 19:44:42.360490+01:00)
+2020-12-29 19:44:42,370 Job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 19:45:02 CET)" executed successfully
+2020-12-29 19:44:56,399 El sensor DHT22 dejó de funcionar
+2020-12-29 19:45:02,364 Running job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 19:45:02 CET)" (scheduled at 2020-12-29 19:45:02.360490+01:00)
+2020-12-29 19:45:02,366 Job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 19:45:22 CET)" executed successfully
+2020-12-29 19:46:30,550 Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2020-12-29 19:46:30,554 Added job "VelocidadViento.medir_rafaga" to job store "default"
+2020-12-29 19:46:30,554 Scheduler started
+2020-12-29 19:46:45,557 El sensor DHT22 dejó de funcionar
+2020-12-29 19:46:50,615 Running job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 19:46:50 CET)" (scheduled at 2020-12-29 19:46:50.550094+01:00)
+2020-12-29 19:46:50,617 Job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 19:47:10 CET)" executed successfully
+2020-12-29 19:47:02,561 El sensor DHT22 dejó de funcionar
+2020-12-29 19:47:10,555 Running job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 19:47:10 CET)" (scheduled at 2020-12-29 19:47:10.550094+01:00)
+2020-12-29 19:47:10,558 Job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 19:47:30 CET)" executed successfully
+2020-12-29 19:47:19,570 El sensor DHT22 dejó de funcionar
+2020-12-29 19:47:30,555 Running job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 19:47:30 CET)" (scheduled at 2020-12-29 19:47:30.550094+01:00)
+2020-12-29 19:47:30,558 Job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 19:47:30 CET)" executed successfully
+2020-12-29 19:47:36,572 El sensor DHT22 dejó de funcionar
+2020-12-29 19:47:50,561 Running job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 19:47:50 CET)" (scheduled at 2020-12-29 19:47:50.550094+01:00)
+2020-12-29 19:47:50,567 Job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 19:48:10 CET)" executed successfully
+2020-12-29 19:47:53,576 El sensor DHT22 dejó de funcionar
+2020-12-29 19:48:10,562 Running job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 19:48:10 CET)" (scheduled at 2020-12-29 19:48:10.550094+01:00)
+2020-12-29 19:48:10,565 Job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 19:48:30 CET)" executed successfully
+2020-12-29 19:48:10,581 El sensor DHT22 dejó de funcionar
+2020-12-29 19:48:27,584 El sensor DHT22 dejó de funcionar
+2020-12-29 19:48:30,556 Running job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 19:48:30 CET)" (scheduled at 2020-12-29 19:48:30.550094+01:00)
+2020-12-29 19:48:30,558 Job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 19:48:50 CET)" executed successfully
+2020-12-29 19:48:48,194 Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2020-12-29 19:48:48,198 Added job "VelocidadViento.medir_rafaga" to job store "default"
+2020-12-29 19:48:48,199 Scheduler started
+2020-12-29 19:48:50,203 El sensor DHT22 dejó de funcionar
+2020-12-29 19:48:54,208 El sensor DHT22 dejó de funcionar
+2020-12-29 19:48:58,213 El sensor DHT22 dejó de funcionar
+2020-12-29 19:49:02,217 El sensor DHT22 dejó de funcionar
+2020-12-29 19:49:06,221 El sensor DHT22 dejó de funcionar
+2020-12-29 19:49:08,205 Running job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 19:49:08 CET)" (scheduled at 2020-12-29 19:49:08.193645+01:00)
+2020-12-29 19:49:08,206 Job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 19:49:28 CET)" executed successfully
+2020-12-29 19:49:10,224 El sensor DHT22 dejó de funcionar
+2020-12-29 19:49:14,228 El sensor DHT22 dejó de funcionar
+2020-12-29 19:49:18,231 El sensor DHT22 dejó de funcionar
+2020-12-29 19:49:22,234 El sensor DHT22 dejó de funcionar
+2020-12-29 19:49:26,238 El sensor DHT22 dejó de funcionar
+2020-12-29 19:49:28,198 Running job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 19:49:28 CET)" (scheduled at 2020-12-29 19:49:28.193645+01:00)
+2020-12-29 19:49:28,201 Job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 19:49:48 CET)" executed successfully
+2020-12-29 19:49:30,242 El sensor DHT22 dejó de funcionar
+2020-12-29 19:49:34,246 El sensor DHT22 dejó de funcionar
+2020-12-29 19:49:38,249 El sensor DHT22 dejó de funcionar
+2020-12-29 19:49:42,252 El sensor DHT22 dejó de funcionar
+2020-12-29 19:49:46,258 El sensor DHT22 dejó de funcionar
+2020-12-29 19:49:48,199 Running job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 19:49:48 CET)" (scheduled at 2020-12-29 19:49:48.193645+01:00)
+2020-12-29 19:49:48,201 Job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 19:49:48 CET)" executed successfully
+2020-12-29 19:49:50,261 El sensor DHT22 dejó de funcionar
+2020-12-29 19:49:54,265 El sensor DHT22 dejó de funcionar
+2020-12-29 19:50:01,487 Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2020-12-29 19:50:01,490 Added job "VelocidadViento.medir_rafaga" to job store "default"
+2020-12-29 19:50:01,493 Scheduler started
+2020-12-29 19:50:03,497 El sensor DHT22 dejó de funcionar
+2020-12-29 19:50:07,501 El sensor DHT22 dejó de funcionar
+2020-12-29 19:50:11,505 El sensor DHT22 dejó de funcionar
+2020-12-29 19:50:15,508 El sensor DHT22 dejó de funcionar
+2020-12-29 19:50:19,512 El sensor DHT22 dejó de funcionar
+2020-12-29 19:50:21,489 Running job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 19:50:21 CET)" (scheduled at 2020-12-29 19:50:21.486555+01:00)
+2020-12-29 19:50:21,491 Job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 19:50:41 CET)" executed successfully
+2020-12-29 19:50:23,515 El sensor DHT22 dejó de funcionar
+2020-12-29 19:52:02,130 Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2020-12-29 19:52:02,133 Added job "VelocidadViento.medir_rafaga" to job store "default"
+2020-12-29 19:52:02,134 Scheduler started
+2020-12-29 19:52:04,139 El sensor DHT22 dejó de funcionar
+2020-12-29 19:52:08,142 El sensor DHT22 dejó de funcionar
+2020-12-29 19:52:12,146 El sensor DHT22 dejó de funcionar
+2020-12-29 19:52:17,999 Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2020-12-29 19:52:18,002 Added job "VelocidadViento.medir_rafaga" to job store "default"
+2020-12-29 19:52:18,003 Scheduler started
+2020-12-29 19:52:38,001 Running job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 19:52:37 CET)" (scheduled at 2020-12-29 19:52:37.998592+01:00)
+2020-12-29 19:52:38,003 Job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 19:52:57 CET)" executed successfully
+2020-12-29 19:52:58,004 Running job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 19:52:57 CET)" (scheduled at 2020-12-29 19:52:57.998592+01:00)
+2020-12-29 19:52:58,005 Job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 19:52:57 CET)" executed successfully
+2020-12-29 19:53:18,004 Running job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 19:53:17 CET)" (scheduled at 2020-12-29 19:53:17.998592+01:00)
+2020-12-29 19:53:18,005 Job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 19:53:17 CET)" executed successfully
+2020-12-29 19:53:38,005 Running job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 19:53:37 CET)" (scheduled at 2020-12-29 19:53:37.998592+01:00)
+2020-12-29 19:53:38,008 Job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 19:53:57 CET)" executed successfully
+2020-12-29 19:53:58,004 Running job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 19:53:57 CET)" (scheduled at 2020-12-29 19:53:57.998592+01:00)
+2020-12-29 19:53:58,008 Job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 19:54:17 CET)" executed successfully
+2020-12-29 19:54:18,005 Running job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 19:54:17 CET)" (scheduled at 2020-12-29 19:54:17.998592+01:00)
+2020-12-29 19:54:18,008 Job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 19:54:37 CET)" executed successfully
+2020-12-29 19:54:38,005 Running job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 19:54:37 CET)" (scheduled at 2020-12-29 19:54:37.998592+01:00)
+2020-12-29 19:54:38,007 Job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 19:54:37 CET)" executed successfully
+2020-12-29 19:54:58,006 Running job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 19:54:57 CET)" (scheduled at 2020-12-29 19:54:57.998592+01:00)
+2020-12-29 19:54:58,009 Job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 19:55:17 CET)" executed successfully
+2020-12-29 19:55:18,004 Running job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 19:55:17 CET)" (scheduled at 2020-12-29 19:55:17.998592+01:00)
+2020-12-29 19:55:18,009 Job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 19:55:37 CET)" executed successfully
+2020-12-29 19:55:38,006 Running job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 19:55:37 CET)" (scheduled at 2020-12-29 19:55:37.998592+01:00)
+2020-12-29 19:55:38,008 Job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 19:55:57 CET)" executed successfully
+2020-12-29 19:55:58,004 Running job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 19:56:17 CET)" (scheduled at 2020-12-29 19:55:57.998592+01:00)
+2020-12-29 19:55:58,005 Job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 19:56:17 CET)" executed successfully
+2020-12-29 19:56:18,001 Running job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 19:56:37 CET)" (scheduled at 2020-12-29 19:56:17.998592+01:00)
+2020-12-29 19:56:18,002 Job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 19:56:37 CET)" executed successfully
+2020-12-29 19:56:38,001 Running job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 19:56:57 CET)" (scheduled at 2020-12-29 19:56:37.998592+01:00)
+2020-12-29 19:56:38,002 Job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 19:56:57 CET)" executed successfully
+2020-12-29 19:56:58,002 Running job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 19:57:17 CET)" (scheduled at 2020-12-29 19:56:57.998592+01:00)
+2020-12-29 19:56:58,003 Job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 19:57:17 CET)" executed successfully
+2020-12-29 20:02:24,557 Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2020-12-29 20:02:24,563 Added job "VelocidadViento.medir_rafaga" to job store "default"
+2020-12-29 20:02:24,564 Scheduler started
+2020-12-29 20:02:24,597 Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2020-12-29 20:02:24,599 Added job "Main.iniciar_ciclo" to job store "default"
+2020-12-29 20:02:24,599 Scheduler started
+2020-12-29 20:02:36,128 Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2020-12-29 20:02:36,132 Added job "VelocidadViento.medir_rafaga" to job store "default"
+2020-12-29 20:02:36,132 Scheduler started
+2020-12-29 20:02:36,169 Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2020-12-29 20:02:36,172 Added job "Main.iniciar_ciclo" to job store "default"
+2020-12-29 20:02:36,172 Scheduler started
+2020-12-29 20:08:26,617 Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2020-12-29 20:08:26,621 Added job "VelocidadViento.medir_rafaga" to job store "default"
+2020-12-29 20:08:26,622 Scheduler started
+2020-12-29 20:08:26,647 Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2020-12-29 20:08:26,649 Added job "Main.iniciar_ciclo" to job store "default"
+2020-12-29 20:08:26,649 Scheduler started
+2020-12-29 20:10:49,641 Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2020-12-29 20:10:49,647 Added job "VelocidadViento.medir_rafaga" to job store "default"
+2020-12-29 20:10:49,647 Scheduler started
+2020-12-29 20:10:49,670 Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2020-12-29 20:10:49,672 Added job "Main.iniciar_ciclo" to job store "default"
+2020-12-29 20:10:49,672 Scheduler started
+2020-12-29 20:11:09,643 Running job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 20:11:09 CET)" (scheduled at 2020-12-29 20:11:09.640378+01:00)
+2020-12-29 20:11:09,645 Job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 20:11:29 CET)" executed successfully
+2020-12-29 20:11:29,646 Running job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 20:11:29 CET)" (scheduled at 2020-12-29 20:11:29.640378+01:00)
+2020-12-29 20:11:29,647 Job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 20:11:29 CET)" executed successfully
+2020-12-29 20:11:49,659 Running job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 20:11:49 CET)" (scheduled at 2020-12-29 20:11:49.640378+01:00)
+2020-12-29 20:11:49,661 Job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 20:12:09 CET)" executed successfully
+2020-12-29 20:12:09,644 Running job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 20:12:09 CET)" (scheduled at 2020-12-29 20:12:09.640378+01:00)
+2020-12-29 20:12:09,645 Job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 20:12:09 CET)" executed successfully
+2020-12-29 20:12:29,645 Running job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 20:12:29 CET)" (scheduled at 2020-12-29 20:12:29.640378+01:00)
+2020-12-29 20:12:29,646 Job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 20:12:29 CET)" executed successfully
+2020-12-29 20:12:36,830 Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2020-12-29 20:12:36,834 Added job "VelocidadViento.medir_rafaga" to job store "default"
+2020-12-29 20:12:36,835 Scheduler started
+2020-12-29 20:12:56,833 Running job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 20:12:56 CET)" (scheduled at 2020-12-29 20:12:56.829920+01:00)
+2020-12-29 20:12:56,845 Job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 20:13:16 CET)" executed successfully
+2020-12-29 20:13:16,850 Running job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 20:13:16 CET)" (scheduled at 2020-12-29 20:13:16.829920+01:00)
+2020-12-29 20:13:16,851 Job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 20:13:16 CET)" executed successfully
+2020-12-29 20:13:36,838 Running job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 20:13:36 CET)" (scheduled at 2020-12-29 20:13:36.829920+01:00)
+2020-12-29 20:13:36,841 Job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 20:13:36 CET)" executed successfully
+2020-12-29 20:13:56,837 Running job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 20:13:56 CET)" (scheduled at 2020-12-29 20:13:56.829920+01:00)
+2020-12-29 20:13:56,839 Job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 20:13:56 CET)" executed successfully
+2020-12-29 20:14:16,843 Running job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 20:14:16 CET)" (scheduled at 2020-12-29 20:14:16.829920+01:00)
+2020-12-29 20:14:16,845 Job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 20:14:16 CET)" executed successfully
+2020-12-29 20:14:36,838 Running job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 20:14:36 CET)" (scheduled at 2020-12-29 20:14:36.829920+01:00)
+2020-12-29 20:14:36,840 Job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 20:14:36 CET)" executed successfully
+2020-12-29 20:14:56,838 Running job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 20:14:56 CET)" (scheduled at 2020-12-29 20:14:56.829920+01:00)
+2020-12-29 20:14:56,841 Job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 20:15:16 CET)" executed successfully
+2020-12-29 20:15:16,836 Running job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 20:15:16 CET)" (scheduled at 2020-12-29 20:15:16.829920+01:00)
+2020-12-29 20:15:16,839 Job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 20:15:36 CET)" executed successfully
+2020-12-29 20:15:36,836 Running job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 20:15:36 CET)" (scheduled at 2020-12-29 20:15:36.829920+01:00)
+2020-12-29 20:15:36,838 Job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 20:15:56 CET)" executed successfully
+2020-12-29 20:15:56,835 Running job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 20:15:56 CET)" (scheduled at 2020-12-29 20:15:56.829920+01:00)
+2020-12-29 20:15:56,836 Job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 20:15:56 CET)" executed successfully
+2020-12-29 20:16:16,837 Running job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 20:16:36 CET)" (scheduled at 2020-12-29 20:16:16.829920+01:00)
+2020-12-29 20:16:16,838 Job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 20:16:36 CET)" executed successfully
+2020-12-29 20:16:36,833 Running job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 20:16:56 CET)" (scheduled at 2020-12-29 20:16:36.829920+01:00)
+2020-12-29 20:16:36,834 Job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 20:16:56 CET)" executed successfully
+2020-12-29 20:16:56,833 Running job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 20:17:16 CET)" (scheduled at 2020-12-29 20:16:56.829920+01:00)
+2020-12-29 20:16:56,834 Job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 20:17:16 CET)" executed successfully
+2020-12-29 20:17:16,833 Running job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 20:17:36 CET)" (scheduled at 2020-12-29 20:17:16.829920+01:00)
+2020-12-29 20:17:16,834 Job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 20:17:36 CET)" executed successfully
+2020-12-29 20:17:36,833 Running job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 20:17:56 CET)" (scheduled at 2020-12-29 20:17:36.829920+01:00)
+2020-12-29 20:17:36,834 Job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 20:17:56 CET)" executed successfully
+2020-12-29 20:17:56,833 Running job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 20:18:16 CET)" (scheduled at 2020-12-29 20:17:56.829920+01:00)
+2020-12-29 20:17:56,834 Job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 20:18:16 CET)" executed successfully
+2020-12-29 20:18:16,833 Running job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 20:18:36 CET)" (scheduled at 2020-12-29 20:18:16.829920+01:00)
+2020-12-29 20:18:16,834 Job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 20:18:36 CET)" executed successfully
+2020-12-29 20:18:36,833 Running job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 20:18:56 CET)" (scheduled at 2020-12-29 20:18:36.829920+01:00)
+2020-12-29 20:18:36,834 Job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 20:18:56 CET)" executed successfully
+2020-12-29 20:18:56,833 Running job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 20:19:16 CET)" (scheduled at 2020-12-29 20:18:56.829920+01:00)
+2020-12-29 20:18:56,834 Job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 20:19:16 CET)" executed successfully
+2020-12-29 20:19:16,833 Running job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 20:19:36 CET)" (scheduled at 2020-12-29 20:19:16.829920+01:00)
+2020-12-29 20:19:16,834 Job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 20:19:36 CET)" executed successfully
+2020-12-29 20:19:36,833 Running job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 20:19:56 CET)" (scheduled at 2020-12-29 20:19:36.829920+01:00)
+2020-12-29 20:19:36,834 Job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 20:19:56 CET)" executed successfully
+2020-12-29 20:19:56,833 Running job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 20:20:16 CET)" (scheduled at 2020-12-29 20:19:56.829920+01:00)
+2020-12-29 20:19:56,834 Job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 20:20:16 CET)" executed successfully
+2020-12-29 20:20:16,833 Running job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 20:20:36 CET)" (scheduled at 2020-12-29 20:20:16.829920+01:00)
+2020-12-29 20:20:16,834 Job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 20:20:36 CET)" executed successfully
+2020-12-29 20:20:36,833 Running job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 20:20:56 CET)" (scheduled at 2020-12-29 20:20:36.829920+01:00)
+2020-12-29 20:20:36,834 Job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 20:20:56 CET)" executed successfully
+2020-12-29 20:20:56,833 Running job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 20:21:16 CET)" (scheduled at 2020-12-29 20:20:56.829920+01:00)
+2020-12-29 20:20:56,834 Job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 20:21:16 CET)" executed successfully
+2020-12-29 20:21:16,833 Running job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 20:21:36 CET)" (scheduled at 2020-12-29 20:21:16.829920+01:00)
+2020-12-29 20:21:16,833 Job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 20:21:36 CET)" executed successfully
+2020-12-29 20:21:36,833 Running job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 20:21:56 CET)" (scheduled at 2020-12-29 20:21:36.829920+01:00)
+2020-12-29 20:21:36,834 Job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 20:21:56 CET)" executed successfully
+2020-12-29 20:21:56,833 Running job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 20:22:16 CET)" (scheduled at 2020-12-29 20:21:56.829920+01:00)
+2020-12-29 20:21:56,834 Job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 20:22:16 CET)" executed successfully
+2020-12-29 20:22:16,833 Running job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 20:22:36 CET)" (scheduled at 2020-12-29 20:22:16.829920+01:00)
+2020-12-29 20:22:16,834 Job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 20:22:36 CET)" executed successfully
+2020-12-29 20:22:36,833 Running job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 20:22:56 CET)" (scheduled at 2020-12-29 20:22:36.829920+01:00)
+2020-12-29 20:22:36,834 Job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 20:22:56 CET)" executed successfully
+2020-12-29 20:22:56,833 Running job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 20:23:16 CET)" (scheduled at 2020-12-29 20:22:56.829920+01:00)
+2020-12-29 20:22:56,834 Job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 20:23:16 CET)" executed successfully
+2020-12-29 20:23:16,833 Running job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 20:23:36 CET)" (scheduled at 2020-12-29 20:23:16.829920+01:00)
+2020-12-29 20:23:16,834 Job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 20:23:36 CET)" executed successfully
+2020-12-29 20:23:36,833 Running job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 20:23:56 CET)" (scheduled at 2020-12-29 20:23:36.829920+01:00)
+2020-12-29 20:23:36,834 Job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 20:23:56 CET)" executed successfully
+2020-12-29 20:23:56,833 Running job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 20:24:16 CET)" (scheduled at 2020-12-29 20:23:56.829920+01:00)
+2020-12-29 20:23:56,834 Job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 20:24:16 CET)" executed successfully
+2020-12-29 20:24:16,833 Running job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 20:24:36 CET)" (scheduled at 2020-12-29 20:24:16.829920+01:00)
+2020-12-29 20:24:16,834 Job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 20:24:36 CET)" executed successfully
+2020-12-29 20:24:36,833 Running job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 20:24:56 CET)" (scheduled at 2020-12-29 20:24:36.829920+01:00)
+2020-12-29 20:24:36,834 Job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 20:24:56 CET)" executed successfully
+2020-12-29 20:24:56,833 Running job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 20:25:16 CET)" (scheduled at 2020-12-29 20:24:56.829920+01:00)
+2020-12-29 20:24:56,834 Job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 20:25:16 CET)" executed successfully
+2020-12-29 20:25:16,833 Running job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 20:25:36 CET)" (scheduled at 2020-12-29 20:25:16.829920+01:00)
+2020-12-29 20:25:16,834 Job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 20:25:36 CET)" executed successfully
+2020-12-29 20:25:36,833 Running job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 20:25:56 CET)" (scheduled at 2020-12-29 20:25:36.829920+01:00)
+2020-12-29 20:25:36,834 Job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 20:25:56 CET)" executed successfully
+2020-12-29 20:25:56,833 Running job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 20:26:16 CET)" (scheduled at 2020-12-29 20:25:56.829920+01:00)
+2020-12-29 20:25:56,835 Job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 20:26:16 CET)" executed successfully
+2020-12-29 20:26:16,833 Running job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 20:26:36 CET)" (scheduled at 2020-12-29 20:26:16.829920+01:00)
+2020-12-29 20:26:16,835 Job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 20:26:36 CET)" executed successfully
+2020-12-29 20:26:36,833 Running job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 20:26:56 CET)" (scheduled at 2020-12-29 20:26:36.829920+01:00)
+2020-12-29 20:26:36,835 Job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 20:26:56 CET)" executed successfully
+2020-12-29 20:26:56,833 Running job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 20:27:16 CET)" (scheduled at 2020-12-29 20:26:56.829920+01:00)
+2020-12-29 20:26:56,834 Job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 20:27:16 CET)" executed successfully
+2020-12-29 20:27:16,833 Running job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 20:27:36 CET)" (scheduled at 2020-12-29 20:27:16.829920+01:00)
+2020-12-29 20:27:16,835 Job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 20:27:36 CET)" executed successfully
+2020-12-29 20:27:36,833 Running job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 20:27:56 CET)" (scheduled at 2020-12-29 20:27:36.829920+01:00)
+2020-12-29 20:27:36,834 Job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 20:27:56 CET)" executed successfully
+2020-12-29 20:27:56,833 Running job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 20:28:16 CET)" (scheduled at 2020-12-29 20:27:56.829920+01:00)
+2020-12-29 20:27:56,834 Job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 20:28:16 CET)" executed successfully
+2020-12-29 20:28:16,833 Running job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 20:28:36 CET)" (scheduled at 2020-12-29 20:28:16.829920+01:00)
+2020-12-29 20:28:16,834 Job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 20:28:36 CET)" executed successfully
+2020-12-29 20:28:36,833 Running job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 20:28:56 CET)" (scheduled at 2020-12-29 20:28:36.829920+01:00)
+2020-12-29 20:28:36,834 Job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 20:28:56 CET)" executed successfully
+2020-12-29 20:28:56,833 Running job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 20:29:16 CET)" (scheduled at 2020-12-29 20:28:56.829920+01:00)
+2020-12-29 20:28:56,834 Job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 20:29:16 CET)" executed successfully
+2020-12-29 20:29:16,833 Running job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 20:29:36 CET)" (scheduled at 2020-12-29 20:29:16.829920+01:00)
+2020-12-29 20:29:16,835 Job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 20:29:36 CET)" executed successfully
+2020-12-29 20:29:36,833 Running job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 20:29:56 CET)" (scheduled at 2020-12-29 20:29:36.829920+01:00)
+2020-12-29 20:29:36,835 Job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 20:29:56 CET)" executed successfully
+2020-12-29 20:29:56,833 Running job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 20:30:16 CET)" (scheduled at 2020-12-29 20:29:56.829920+01:00)
+2020-12-29 20:29:56,834 Job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 20:30:16 CET)" executed successfully
+2020-12-29 20:30:16,833 Running job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 20:30:36 CET)" (scheduled at 2020-12-29 20:30:16.829920+01:00)
+2020-12-29 20:30:16,834 Job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 20:30:36 CET)" executed successfully
+2020-12-29 20:30:36,833 Running job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 20:30:56 CET)" (scheduled at 2020-12-29 20:30:36.829920+01:00)
+2020-12-29 20:30:36,834 Job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 20:30:56 CET)" executed successfully
+2020-12-29 20:30:56,833 Running job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 20:31:16 CET)" (scheduled at 2020-12-29 20:30:56.829920+01:00)
+2020-12-29 20:30:56,835 Job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 20:31:16 CET)" executed successfully
+2020-12-29 20:31:16,833 Running job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 20:31:36 CET)" (scheduled at 2020-12-29 20:31:16.829920+01:00)
+2020-12-29 20:31:16,834 Job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 20:31:36 CET)" executed successfully
+2020-12-29 20:31:36,833 Running job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 20:31:56 CET)" (scheduled at 2020-12-29 20:31:36.829920+01:00)
+2020-12-29 20:31:36,834 Job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 20:31:56 CET)" executed successfully
+2020-12-29 20:31:56,833 Running job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 20:32:16 CET)" (scheduled at 2020-12-29 20:31:56.829920+01:00)
+2020-12-29 20:31:56,834 Job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 20:32:16 CET)" executed successfully
+2020-12-29 20:32:16,833 Running job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 20:32:36 CET)" (scheduled at 2020-12-29 20:32:16.829920+01:00)
+2020-12-29 20:32:16,834 Job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 20:32:36 CET)" executed successfully
+2020-12-29 20:32:36,833 Running job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 20:32:56 CET)" (scheduled at 2020-12-29 20:32:36.829920+01:00)
+2020-12-29 20:32:36,834 Job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 20:32:56 CET)" executed successfully
+2020-12-29 20:32:56,833 Running job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 20:33:16 CET)" (scheduled at 2020-12-29 20:32:56.829920+01:00)
+2020-12-29 20:32:56,834 Job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 20:33:16 CET)" executed successfully
+2020-12-29 20:33:16,833 Running job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 20:33:36 CET)" (scheduled at 2020-12-29 20:33:16.829920+01:00)
+2020-12-29 20:33:16,835 Job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 20:33:36 CET)" executed successfully
+2020-12-29 20:33:36,833 Running job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 20:33:56 CET)" (scheduled at 2020-12-29 20:33:36.829920+01:00)
+2020-12-29 20:33:36,834 Job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 20:33:56 CET)" executed successfully
+2020-12-29 20:33:56,833 Running job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 20:34:16 CET)" (scheduled at 2020-12-29 20:33:56.829920+01:00)
+2020-12-29 20:33:56,834 Job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 20:34:16 CET)" executed successfully
+2020-12-29 20:34:16,833 Running job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 20:34:36 CET)" (scheduled at 2020-12-29 20:34:16.829920+01:00)
+2020-12-29 20:34:16,834 Job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 20:34:36 CET)" executed successfully
+2020-12-29 20:34:36,833 Running job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 20:34:56 CET)" (scheduled at 2020-12-29 20:34:36.829920+01:00)
+2020-12-29 20:34:36,834 Job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 20:34:56 CET)" executed successfully
+2020-12-29 20:34:56,833 Running job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 20:35:16 CET)" (scheduled at 2020-12-29 20:34:56.829920+01:00)
+2020-12-29 20:34:56,834 Job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 20:35:16 CET)" executed successfully
+2020-12-29 20:35:16,833 Running job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 20:35:36 CET)" (scheduled at 2020-12-29 20:35:16.829920+01:00)
+2020-12-29 20:35:16,835 Job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 20:35:36 CET)" executed successfully
+2020-12-29 20:35:36,833 Running job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 20:35:56 CET)" (scheduled at 2020-12-29 20:35:36.829920+01:00)
+2020-12-29 20:35:36,835 Job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 20:35:56 CET)" executed successfully
+2020-12-29 20:35:56,833 Running job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 20:36:16 CET)" (scheduled at 2020-12-29 20:35:56.829920+01:00)
+2020-12-29 20:35:56,835 Job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 20:36:16 CET)" executed successfully
+2020-12-29 20:36:16,833 Running job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 20:36:36 CET)" (scheduled at 2020-12-29 20:36:16.829920+01:00)
+2020-12-29 20:36:16,835 Job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 20:36:36 CET)" executed successfully
+2020-12-29 20:36:36,833 Running job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 20:36:56 CET)" (scheduled at 2020-12-29 20:36:36.829920+01:00)
+2020-12-29 20:36:36,835 Job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 20:36:56 CET)" executed successfully
+2020-12-29 20:36:56,833 Running job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 20:37:16 CET)" (scheduled at 2020-12-29 20:36:56.829920+01:00)
+2020-12-29 20:36:56,835 Job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 20:37:16 CET)" executed successfully
+2020-12-29 20:37:16,833 Running job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 20:37:36 CET)" (scheduled at 2020-12-29 20:37:16.829920+01:00)
+2020-12-29 20:37:16,834 Job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 20:37:36 CET)" executed successfully
+2020-12-29 20:37:36,833 Running job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 20:37:56 CET)" (scheduled at 2020-12-29 20:37:36.829920+01:00)
+2020-12-29 20:37:36,834 Job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 20:37:56 CET)" executed successfully
+2020-12-29 20:37:56,833 Running job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 20:38:16 CET)" (scheduled at 2020-12-29 20:37:56.829920+01:00)
+2020-12-29 20:37:56,834 Job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 20:38:16 CET)" executed successfully
+2020-12-29 20:38:16,833 Running job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 20:38:36 CET)" (scheduled at 2020-12-29 20:38:16.829920+01:00)
+2020-12-29 20:38:16,835 Job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 20:38:36 CET)" executed successfully
+2020-12-29 20:38:36,833 Running job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 20:38:56 CET)" (scheduled at 2020-12-29 20:38:36.829920+01:00)
+2020-12-29 20:38:36,834 Job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 20:38:56 CET)" executed successfully
+2020-12-29 20:38:56,833 Running job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 20:39:16 CET)" (scheduled at 2020-12-29 20:38:56.829920+01:00)
+2020-12-29 20:38:56,834 Job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 20:39:16 CET)" executed successfully
+2020-12-29 20:39:16,833 Running job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 20:39:36 CET)" (scheduled at 2020-12-29 20:39:16.829920+01:00)
+2020-12-29 20:39:16,834 Job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 20:39:36 CET)" executed successfully
+2020-12-29 20:39:36,833 Running job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 20:39:56 CET)" (scheduled at 2020-12-29 20:39:36.829920+01:00)
+2020-12-29 20:39:36,834 Job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 20:39:56 CET)" executed successfully
+2020-12-29 20:39:56,833 Running job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 20:40:16 CET)" (scheduled at 2020-12-29 20:39:56.829920+01:00)
+2020-12-29 20:39:56,834 Job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 20:40:16 CET)" executed successfully
+2020-12-29 20:40:16,833 Running job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 20:40:36 CET)" (scheduled at 2020-12-29 20:40:16.829920+01:00)
+2020-12-29 20:40:16,834 Job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 20:40:36 CET)" executed successfully
+2020-12-29 20:40:36,833 Running job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 20:40:56 CET)" (scheduled at 2020-12-29 20:40:36.829920+01:00)
+2020-12-29 20:40:36,834 Job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 20:40:56 CET)" executed successfully
+2020-12-29 20:40:56,833 Running job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 20:41:16 CET)" (scheduled at 2020-12-29 20:40:56.829920+01:00)
+2020-12-29 20:40:56,834 Job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 20:41:16 CET)" executed successfully
+2020-12-29 20:41:16,833 Running job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 20:41:36 CET)" (scheduled at 2020-12-29 20:41:16.829920+01:00)
+2020-12-29 20:41:16,835 Job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 20:41:36 CET)" executed successfully
+2020-12-29 20:41:36,833 Running job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 20:41:56 CET)" (scheduled at 2020-12-29 20:41:36.829920+01:00)
+2020-12-29 20:41:36,835 Job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 20:41:56 CET)" executed successfully
+2020-12-29 20:41:56,833 Running job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 20:42:16 CET)" (scheduled at 2020-12-29 20:41:56.829920+01:00)
+2020-12-29 20:41:56,834 Job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 20:42:16 CET)" executed successfully
+2020-12-29 20:42:16,833 Running job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 20:42:36 CET)" (scheduled at 2020-12-29 20:42:16.829920+01:00)
+2020-12-29 20:42:16,836 Job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 20:42:36 CET)" executed successfully
+2020-12-29 20:42:36,833 Running job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 20:42:56 CET)" (scheduled at 2020-12-29 20:42:36.829920+01:00)
+2020-12-29 20:42:36,834 Job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 20:42:56 CET)" executed successfully
+2020-12-29 20:42:37,646 Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2020-12-29 20:42:37,648 Added job "Main.iniciar_ciclo" to job store "default"
+2020-12-29 20:42:37,649 Scheduler started
+2020-12-29 20:42:56,833 Running job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 20:43:16 CET)" (scheduled at 2020-12-29 20:42:56.829920+01:00)
+2020-12-29 20:42:56,834 Job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 20:43:16 CET)" executed successfully
+2020-12-29 20:43:16,833 Running job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 20:43:36 CET)" (scheduled at 2020-12-29 20:43:16.829920+01:00)
+2020-12-29 20:43:16,835 Job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 20:43:36 CET)" executed successfully
+2020-12-29 20:43:36,833 Running job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 20:43:56 CET)" (scheduled at 2020-12-29 20:43:36.829920+01:00)
+2020-12-29 20:43:36,834 Job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 20:43:56 CET)" executed successfully
+2020-12-29 20:43:56,833 Running job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 20:44:16 CET)" (scheduled at 2020-12-29 20:43:56.829920+01:00)
+2020-12-29 20:43:56,834 Job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 20:44:16 CET)" executed successfully
+2020-12-29 20:44:16,833 Running job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 20:44:36 CET)" (scheduled at 2020-12-29 20:44:16.829920+01:00)
+2020-12-29 20:44:16,836 Job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 20:44:36 CET)" executed successfully
+2020-12-29 20:44:36,833 Running job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 20:44:56 CET)" (scheduled at 2020-12-29 20:44:36.829920+01:00)
+2020-12-29 20:44:36,834 Job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 20:44:56 CET)" executed successfully
+2020-12-29 20:44:56,833 Running job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 20:45:16 CET)" (scheduled at 2020-12-29 20:44:56.829920+01:00)
+2020-12-29 20:44:56,834 Job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 20:45:16 CET)" executed successfully
+2020-12-29 20:45:16,833 Running job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 20:45:36 CET)" (scheduled at 2020-12-29 20:45:16.829920+01:00)
+2020-12-29 20:45:16,834 Job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 20:45:36 CET)" executed successfully
+2020-12-29 20:45:36,833 Running job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 20:45:56 CET)" (scheduled at 2020-12-29 20:45:36.829920+01:00)
+2020-12-29 20:45:36,834 Job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 20:45:56 CET)" executed successfully
+2020-12-29 20:45:56,833 Running job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 20:46:16 CET)" (scheduled at 2020-12-29 20:45:56.829920+01:00)
+2020-12-29 20:45:56,834 Job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 20:46:16 CET)" executed successfully
+2020-12-29 20:46:16,833 Running job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 20:46:36 CET)" (scheduled at 2020-12-29 20:46:16.829920+01:00)
+2020-12-29 20:46:16,834 Job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 20:46:36 CET)" executed successfully
+2020-12-29 20:46:36,833 Running job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 20:46:56 CET)" (scheduled at 2020-12-29 20:46:36.829920+01:00)
+2020-12-29 20:46:36,834 Job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 20:46:56 CET)" executed successfully
+2020-12-29 20:46:56,833 Running job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 20:47:16 CET)" (scheduled at 2020-12-29 20:46:56.829920+01:00)
+2020-12-29 20:46:56,834 Job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 20:47:16 CET)" executed successfully
+2020-12-29 20:47:16,833 Running job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 20:47:36 CET)" (scheduled at 2020-12-29 20:47:16.829920+01:00)
+2020-12-29 20:47:16,835 Job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 20:47:36 CET)" executed successfully
+2020-12-29 20:47:36,833 Running job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 20:47:56 CET)" (scheduled at 2020-12-29 20:47:36.829920+01:00)
+2020-12-29 20:47:36,834 Job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 20:47:56 CET)" executed successfully
+2020-12-29 20:47:56,833 Running job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 20:48:16 CET)" (scheduled at 2020-12-29 20:47:56.829920+01:00)
+2020-12-29 20:47:56,835 Job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 20:48:16 CET)" executed successfully
+2020-12-29 20:48:16,833 Running job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 20:48:36 CET)" (scheduled at 2020-12-29 20:48:16.829920+01:00)
+2020-12-29 20:48:16,834 Job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 20:48:36 CET)" executed successfully
+2020-12-29 20:48:36,833 Running job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 20:48:56 CET)" (scheduled at 2020-12-29 20:48:36.829920+01:00)
+2020-12-29 20:48:36,834 Job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 20:48:56 CET)" executed successfully
+2020-12-29 20:48:56,833 Running job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 20:49:16 CET)" (scheduled at 2020-12-29 20:48:56.829920+01:00)
+2020-12-29 20:48:56,835 Job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 20:49:16 CET)" executed successfully
+2020-12-29 20:49:16,833 Running job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 20:49:36 CET)" (scheduled at 2020-12-29 20:49:16.829920+01:00)
+2020-12-29 20:49:16,834 Job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 20:49:36 CET)" executed successfully
+2020-12-29 20:49:36,833 Running job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 20:49:56 CET)" (scheduled at 2020-12-29 20:49:36.829920+01:00)
+2020-12-29 20:49:36,835 Job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 20:49:56 CET)" executed successfully
+2020-12-29 20:49:56,833 Running job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 20:50:16 CET)" (scheduled at 2020-12-29 20:49:56.829920+01:00)
+2020-12-29 20:49:56,834 Job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 20:50:16 CET)" executed successfully
+2020-12-29 20:50:16,833 Running job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 20:50:36 CET)" (scheduled at 2020-12-29 20:50:16.829920+01:00)
+2020-12-29 20:50:16,834 Job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 20:50:36 CET)" executed successfully
+2020-12-29 20:50:36,833 Running job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 20:50:56 CET)" (scheduled at 2020-12-29 20:50:36.829920+01:00)
+2020-12-29 20:50:36,834 Job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 20:50:56 CET)" executed successfully
+2020-12-29 20:50:56,833 Running job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 20:51:16 CET)" (scheduled at 2020-12-29 20:50:56.829920+01:00)
+2020-12-29 20:50:56,834 Job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 20:51:16 CET)" executed successfully
+2020-12-29 20:51:16,833 Running job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 20:51:36 CET)" (scheduled at 2020-12-29 20:51:16.829920+01:00)
+2020-12-29 20:51:16,834 Job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 20:51:36 CET)" executed successfully
+2020-12-29 20:51:36,833 Running job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 20:51:56 CET)" (scheduled at 2020-12-29 20:51:36.829920+01:00)
+2020-12-29 20:51:36,838 Job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 20:51:56 CET)" executed successfully
+2020-12-29 20:51:56,833 Running job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 20:52:16 CET)" (scheduled at 2020-12-29 20:51:56.829920+01:00)
+2020-12-29 20:51:56,834 Job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 20:52:16 CET)" executed successfully
+2020-12-29 20:52:16,833 Running job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 20:52:36 CET)" (scheduled at 2020-12-29 20:52:16.829920+01:00)
+2020-12-29 20:52:16,835 Job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 20:52:36 CET)" executed successfully
+2020-12-29 20:52:36,833 Running job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 20:52:56 CET)" (scheduled at 2020-12-29 20:52:36.829920+01:00)
+2020-12-29 20:52:36,834 Job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 20:52:56 CET)" executed successfully
+2020-12-29 20:52:56,833 Running job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 20:53:16 CET)" (scheduled at 2020-12-29 20:52:56.829920+01:00)
+2020-12-29 20:52:56,834 Job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 20:53:16 CET)" executed successfully
+2020-12-29 20:53:16,833 Running job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 20:53:36 CET)" (scheduled at 2020-12-29 20:53:16.829920+01:00)
+2020-12-29 20:53:16,834 Job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 20:53:36 CET)" executed successfully
+2020-12-29 20:53:36,833 Running job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 20:53:56 CET)" (scheduled at 2020-12-29 20:53:36.829920+01:00)
+2020-12-29 20:53:36,834 Job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 20:53:56 CET)" executed successfully
+2020-12-29 20:53:56,833 Running job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 20:54:16 CET)" (scheduled at 2020-12-29 20:53:56.829920+01:00)
+2020-12-29 20:53:56,834 Job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 20:54:16 CET)" executed successfully
+2020-12-29 20:54:16,833 Running job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 20:54:36 CET)" (scheduled at 2020-12-29 20:54:16.829920+01:00)
+2020-12-29 20:54:16,834 Job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 20:54:36 CET)" executed successfully
+2020-12-29 20:54:36,833 Running job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 20:54:56 CET)" (scheduled at 2020-12-29 20:54:36.829920+01:00)
+2020-12-29 20:54:36,834 Job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 20:54:56 CET)" executed successfully
+2020-12-29 20:54:56,833 Running job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 20:55:16 CET)" (scheduled at 2020-12-29 20:54:56.829920+01:00)
+2020-12-29 20:54:56,834 Job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 20:55:16 CET)" executed successfully
+2020-12-29 20:55:16,833 Running job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 20:55:36 CET)" (scheduled at 2020-12-29 20:55:16.829920+01:00)
+2020-12-29 20:55:16,837 Job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 20:55:36 CET)" executed successfully
+2020-12-29 20:55:36,833 Running job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 20:55:56 CET)" (scheduled at 2020-12-29 20:55:36.829920+01:00)
+2020-12-29 20:55:36,835 Job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 20:55:56 CET)" executed successfully
+2020-12-29 20:55:56,833 Running job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 20:56:16 CET)" (scheduled at 2020-12-29 20:55:56.829920+01:00)
+2020-12-29 20:55:56,834 Job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 20:56:16 CET)" executed successfully
+2020-12-29 20:56:16,833 Running job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 20:56:36 CET)" (scheduled at 2020-12-29 20:56:16.829920+01:00)
+2020-12-29 20:56:16,835 Job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 20:56:36 CET)" executed successfully
+2020-12-29 20:56:36,833 Running job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 20:56:56 CET)" (scheduled at 2020-12-29 20:56:36.829920+01:00)
+2020-12-29 20:56:36,834 Job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 20:56:56 CET)" executed successfully
+2020-12-29 20:56:56,833 Running job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 20:57:16 CET)" (scheduled at 2020-12-29 20:56:56.829920+01:00)
+2020-12-29 20:56:56,834 Job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 20:57:16 CET)" executed successfully
+2020-12-29 20:57:16,833 Running job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 20:57:36 CET)" (scheduled at 2020-12-29 20:57:16.829920+01:00)
+2020-12-29 20:57:16,834 Job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 20:57:36 CET)" executed successfully
+2020-12-29 20:57:36,833 Running job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 20:57:56 CET)" (scheduled at 2020-12-29 20:57:36.829920+01:00)
+2020-12-29 20:57:36,834 Job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 20:57:56 CET)" executed successfully
+2020-12-29 20:57:56,833 Running job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 20:58:16 CET)" (scheduled at 2020-12-29 20:57:56.829920+01:00)
+2020-12-29 20:57:56,834 Job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 20:58:16 CET)" executed successfully
+2020-12-29 20:58:16,833 Running job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 20:58:36 CET)" (scheduled at 2020-12-29 20:58:16.829920+01:00)
+2020-12-29 20:58:16,834 Job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 20:58:36 CET)" executed successfully
+2020-12-29 20:58:36,833 Running job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 20:58:56 CET)" (scheduled at 2020-12-29 20:58:36.829920+01:00)
+2020-12-29 20:58:36,834 Job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 20:58:56 CET)" executed successfully
+2020-12-29 20:58:56,833 Running job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 20:59:16 CET)" (scheduled at 2020-12-29 20:58:56.829920+01:00)
+2020-12-29 20:58:56,834 Job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 20:59:16 CET)" executed successfully
+2020-12-29 20:59:16,833 Running job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 20:59:36 CET)" (scheduled at 2020-12-29 20:59:16.829920+01:00)
+2020-12-29 20:59:16,834 Job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 20:59:36 CET)" executed successfully
+2020-12-29 20:59:36,833 Running job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 20:59:56 CET)" (scheduled at 2020-12-29 20:59:36.829920+01:00)
+2020-12-29 20:59:36,834 Job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 20:59:56 CET)" executed successfully
+2020-12-29 20:59:56,833 Running job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 21:00:16 CET)" (scheduled at 2020-12-29 20:59:56.829920+01:00)
+2020-12-29 20:59:56,834 Job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 21:00:16 CET)" executed successfully
+2020-12-29 21:00:00,007 Running job "Main.iniciar_ciclo (trigger: cron[minute='0'], next run at: 2020-12-29 21:00:00 CET)" (scheduled at 2020-12-29 21:00:00+01:00)
+2020-12-29 21:00:16,832 Running job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 21:00:36 CET)" (scheduled at 2020-12-29 21:00:16.829920+01:00)
+2020-12-29 21:00:16,833 Job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 21:00:36 CET)" executed successfully
+2020-12-29 21:00:36,832 Running job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 21:00:56 CET)" (scheduled at 2020-12-29 21:00:36.829920+01:00)
+2020-12-29 21:00:43,550 Job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 21:00:56 CET)" executed successfully
+2020-12-29 21:00:56,833 Running job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 21:01:16 CET)" (scheduled at 2020-12-29 21:00:56.829920+01:00)
+2020-12-29 21:00:56,834 Job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 21:01:16 CET)" executed successfully
+2020-12-29 21:01:16,833 Running job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 21:01:36 CET)" (scheduled at 2020-12-29 21:01:16.829920+01:00)
+2020-12-29 21:01:16,834 Job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 21:01:36 CET)" executed successfully
+2020-12-29 21:01:36,833 Running job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 21:01:56 CET)" (scheduled at 2020-12-29 21:01:36.829920+01:00)
+2020-12-29 21:01:36,834 Job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 21:01:56 CET)" executed successfully
+2020-12-29 21:01:56,833 Running job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 21:02:16 CET)" (scheduled at 2020-12-29 21:01:56.829920+01:00)
+2020-12-29 21:01:56,834 Job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 21:02:16 CET)" executed successfully
+2020-12-29 21:02:16,833 Running job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 21:02:36 CET)" (scheduled at 2020-12-29 21:02:16.829920+01:00)
+2020-12-29 21:02:16,834 Job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 21:02:36 CET)" executed successfully
+2020-12-29 21:02:36,833 Running job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 21:02:56 CET)" (scheduled at 2020-12-29 21:02:36.829920+01:00)
+2020-12-29 21:02:36,834 Job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 21:02:56 CET)" executed successfully
+2020-12-29 21:02:56,833 Running job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 21:03:16 CET)" (scheduled at 2020-12-29 21:02:56.829920+01:00)
+2020-12-29 21:02:56,834 Job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 21:03:16 CET)" executed successfully
+2020-12-29 21:03:16,833 Running job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 21:03:36 CET)" (scheduled at 2020-12-29 21:03:16.829920+01:00)
+2020-12-29 21:03:16,834 Job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 21:03:36 CET)" executed successfully
+2020-12-29 21:03:36,833 Running job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 21:03:56 CET)" (scheduled at 2020-12-29 21:03:36.829920+01:00)
+2020-12-29 21:03:36,834 Job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 21:03:56 CET)" executed successfully
+2020-12-29 21:03:56,833 Running job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 21:04:16 CET)" (scheduled at 2020-12-29 21:03:56.829920+01:00)
+2020-12-29 21:03:56,835 Job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 21:04:16 CET)" executed successfully
+2020-12-29 21:04:16,833 Running job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 21:04:36 CET)" (scheduled at 2020-12-29 21:04:16.829920+01:00)
+2020-12-29 21:04:16,835 Job "VelocidadViento.medir_rafaga (trigger: interval[0:00:20], next run at: 2020-12-29 21:04:36 CET)" executed successfully

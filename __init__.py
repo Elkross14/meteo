@@ -34,7 +34,7 @@ class Main:
         scheda.start()
 
     def iniciar_ciclo(self):
-        '''Coge la fecha de lectura y hace las llamadas para leer los sensores'''
+        '''Recoge los datos de los sensores y envía los datos al servidor'''
 
         link = self.recoger_datos()
 
@@ -47,9 +47,6 @@ class Main:
     def recoger_datos(self):
         '''Recoge los datos de todos los sensores y los devuelve en una cadena
         junto a la fecha.'''
-
-        fecha = dht22 = bmp180 = tsl2561 = viento = lluvia = "100"
-        direc = "None"
 
         fecha = self.leer_fecha()
         # dht22 = self.leer_dht22()
@@ -80,22 +77,10 @@ class Main:
     def leer_dht22(cls):
         '''Crea el objeto del sensor Dht22 y recoge la temperatura y humedad'''
 
-        # Usamos un bucle para que repita la lectura de la temperatura y humedad
-        # en el caso de que se por error muestre una humedad mayor a 100% o menor a 0%
-       #  while True:
         objeto_dht22 = Dht22()
 
         temperatura_str = objeto_dht22.get_temperature()
         humedad_str = objeto_dht22.get_humidity()
-
-        # if (int(humedad_str) > 0 and int(humedad_str) < 100):
-        # break
-
-        # time.sleep(2)
-
-        print("-----------Dht22-----------")
-        print("Temperatura: " + temperatura_str + "ºC")
-        print("Humedad: " + humedad_str + "%")
 
         return temperatura_str + "/" + humedad_str
 
@@ -110,10 +95,7 @@ class Main:
         temperatura_str = objeto_bmp180.get_temperatura()
         altura_str = objeto_bmp180.get_altura()
 
-        print("-----------Bmp180----------")
-        print("Presión: " + presion_str + "hPa")
-        print("Tempreratura: " + temperatura_str + "ºC")
-        print("Altura: " + altura_str + "m")
+        logging.info('Datos del sensor BMP180 leidos correctamente')
 
         return temperatura_str + "/" + presion_str + "/" + altura_str
 
@@ -128,10 +110,7 @@ class Main:
         luz_infrarroja_str = objeto_tsl2561.get_luz_infrarroja()
         luz_visible_str = objeto_tsl2561.get_luz_visible()
 
-        print("----------Tsl2561----------")
-        print("Luz total: " + luz_total_str + "Lux")
-        print("Luz infrarroja: " + luz_infrarroja_str + "Lux")
-        print("Luz visible: " + luz_visible_str + "Lux")
+        logging.info('Datos del sensor TSL2561 leidos correctamente')
 
         return luz_infrarroja_str + "/" + luz_visible_str + "/" + luz_total_str
 
@@ -143,8 +122,7 @@ class Main:
 
         direccion_viento = objeto_veleta.get_direccion_viento()
 
-        print("----------Veleta----------")
-        print("Dirección del viento: " + direccion_viento)
+        logging.info('Dato de la veleta leido correctamente')
 
         return direccion_viento
 
@@ -157,9 +135,7 @@ class Main:
         vel_media_str = self.objeto_sensor_viento.get_vel_media()
         vel_racha_str = self.objeto_sensor_viento.get_vel_max_racha()
 
-        print("----------Anemómetro----------")
-        print("Velocidad Media: " + vel_media_str + " Km/H" +
-              "\nVelocidad Racha: " + vel_racha_str + " Km/H")
+        logging.info('Datos del anemómetro leidos correctamente')
 
         return vel_media_str + "/" + vel_racha_str
 
@@ -171,8 +147,7 @@ class Main:
 
         lluvia = self.objeto_sensor_lluvia.get_litros()
 
-        print("----------Pluviometro----------")
-        print("LLuvia: " + lluvia + " L/m3")
+        logging.info('Dato del pluviómetro leido correctamente')
 
         return lluvia
 

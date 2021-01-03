@@ -6,6 +6,7 @@
 
 import smbus
 import time
+import logging
 
 
 class Tsl2561:
@@ -14,34 +15,35 @@ class Tsl2561:
     def __init__(self):
 
         try:
-            # Get I2C bus
+            # Recibimos el bus I2C
             bus = smbus.SMBus(1)
 
             # TSL2561 address, 0x39(57)
-            # Select control register, 0x00(00) with command register, 0x80(128)
-            #       0x03(03)    Power ON mode
+            # Selecciona el registro de control, 0x00(00) con el comando register, 0x80(128)
+            #		0x03(03)	modo Power ON
             bus.write_byte_data(0x39, 0x00 | 0x80, 0x03)
             # TSL2561 address, 0x39(57)
-            # Select timing register, 0x01(01) with command register, 0x80(128)
-            #       0x02(02)    Nominal integration time = 402ms
+            # Selecciona el registro de tiempo, 0x01(01) con el comando register, 0x80(128)
+            #		0x02(02)	Tiempo de integración nominal = 402ms
             bus.write_byte_data(0x39, 0x01 | 0x80, 0x02)
 
             time.sleep(0.5)
 
-            # Read data back from 0x0C(12) with command register, 0x80(128), 2 bytes
+            # Leer datos de 0x0C(12) con el comando register, 0x80(128), 2 bytes
             # ch0 LSB, ch0 MSB
             data = bus.read_i2c_block_data(0x39, 0x0C | 0x80, 2)
 
-            # Read data back from 0x0E(14) with command register, 0x80(128), 2 bytes
+            # Leer datos de 0x0E(14) con el comando register, 0x80(128), 2 bytes
             # ch1 LSB, ch1 MSB
             data1 = bus.read_i2c_block_data(0x39, 0x0E | 0x80, 2)
 
-            # Convert the data
+            # Convertir los datos
             self.luz_total = data[1] * 256 + data[0]
             self.luz_infrarroja = data1[1] * 256 + data1[0]
 
         # Recoge el error de lectura del canal SDA
         except OSError:
+            logging.error('El sensor TSL2561 ha dejado de funcionar.')
             self.luz_total = 0
             self.luz_infrarroja = 0
 

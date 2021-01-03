@@ -1,4 +1,3 @@
-import time
 import board
 import busio
 import adafruit_ads1x15.ads1115 as ADS
@@ -11,23 +10,30 @@ class Veleta:
         self.direccion = "None"
 
     def iniciarLectura(self):
-        # Create the I2C bus
+        '''Hace la lectura del voltaje de salida de la veleta'''
+
+        # Crear el bus I2C
         i2c = busio.I2C(board.SCL, board.SDA)
 
-        # Create the ADC object using the I2C bus
+        # Creando el objeto ADC mediante el bus I2C
         ads = ADS.ADS1115(i2c)
 
-        # Create single-ended input on channel 0
+        # Creando una entrada para el canal 0 del ADC
         chan = AnalogIn(ads, ADS.P0)
 
-        # Create differential input between channel 0 and 1
+        # Creando una entrada para los canales 0 y 1
         #chan = AnalogIn(ads, ADS.P0, ADS.P1)
 
+        # Lectura del dato
         voltaje = chan.voltage
 
         return voltaje
 
     def getDireccion(self):
+        '''Mediante el voltaje de salida de la veleta determinará
+        la dirección del viento Devolviendo así un String con el
+        resultado'''
+
         voltaje = self.iniciarLectura()
 
         if (voltaje > 0.100 and voltaje < 0.180):
@@ -51,8 +57,8 @@ class Veleta:
         else:
             self.direccion = "None"
 
-        print(self.direccion)
+        return self.direccion
 
 
 objeto_veleta = Veleta()
-objeto_veleta.getDireccion()
+print(objeto_veleta.getDireccion())
