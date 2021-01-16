@@ -39,7 +39,7 @@ class Veleta:
 
         voltaje = self.iniciar_lectura()
 
-        if 100 < voltaje < 0.180:
+        if 0.100 < voltaje < 0.180:
             self.direccion = "O"
         elif 0.180 < voltaje < 0.350:
             self.direccion = "NO"
@@ -49,8 +49,6 @@ class Veleta:
             self.direccion = "SO"
         elif 0.900 < voltaje < 1.300:
             self.direccion = "NE"
-        elif 1.300 < voltaje < 1.950:
-            self.direccion = "S"
         elif 1.300 < voltaje < 1.950:
             self.direccion = "S"
         elif 1.950 < voltaje < 2.400:

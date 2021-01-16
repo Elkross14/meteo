@@ -2,7 +2,7 @@ import Adafruit_BMP.BMP085 as BMP085  # Importamos la libreria BMP
 import logging
 
 
-class Bmp180:  # Creamos una clase especifica para el sensor
+class Bmp180:  # Creamos una clase específica para el sensor
     '''Lee todos los datos del sensor Bmp180'''
 
     def __init__(self):
@@ -36,7 +36,8 @@ class Bmp180:  # Creamos una clase especifica para el sensor
         return str(round(self.temperatura))
 
     def get_altura(self):
-        '''Devuelve la altura en metros sin decimales en String. Es necesario crear
-        un constructor Bmp180() para actualizar los datos. La altura recibida es muy inexacta.'''
+        '''Devuelve la altura en metros sin decimales en String. Es necesario 
+        crear un constructor Bmp180() para actualizar los datos. La altura recibida
+        es muy inexacta.'''
 
         return str(round(self.altura))

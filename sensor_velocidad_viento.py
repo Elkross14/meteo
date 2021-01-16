@@ -1,5 +1,4 @@
 import math
-
 from gpiozero import Button
 from apscheduler.schedulers.background import BackgroundScheduler
 

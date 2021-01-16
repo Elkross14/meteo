@@ -38,8 +38,8 @@ class Tsl2561:
             data1 = bus.read_i2c_block_data(0x39, 0x0E | 0x80, 2)
 
             # Convertir los datos
-            self.luz_total = data[1] * 256 + data[0]
-            self.luz_infrarroja = data1[1] * 256 + data1[0]
+            self.luz_total = (data[1] * 256 + data[0]) * 3.58
+            self.luz_infrarroja = (data1[1] * 256 + data1[0]) * 2.87
 
         # Recoge el error de lectura del canal SDA
         except OSError:
