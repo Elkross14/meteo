@@ -36,7 +36,7 @@ class MQ3:
     DOutput = Button(15)
 
     # Ro value of the sensor
-    ro = 0.165
+    ro = 0.113
 
     # Curva logaritmica con base 10
     ALCOHOL_CURVA = [-1, 0.357935, -0.471481]
@@ -64,7 +64,7 @@ class MQ3:
 
             self.sched_mq3 = BackgroundScheduler()
             self.sched_mq3.add_job(self.leer_voltaje, 'interval',
-                                   seconds=1, id="sched_mq3")
+                                   seconds=5, id="sched_mq3")
             self.sched_mq3.start()
 
         except (ValueError, OSError):
@@ -118,7 +118,7 @@ class MQ3:
         envien una señal.'''
 
         global alarma_mq3
-        print("Alarma activada")
+
         alarma_mq3 = 1
 
     def reiniciar_contadores(self):

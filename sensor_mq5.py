@@ -35,7 +35,7 @@ class MQ5:
     DOutput = Button(24)
 
     # Ro value of the sensor
-    ro = 0.531
+    ro = 0.234
 
     # Curva logaritmica con base 10
     GPL_CURVA = [2.301030, -0.154902, -0.385390]
@@ -63,7 +63,7 @@ class MQ5:
 
             self.sched_mq5 = BackgroundScheduler()
             self.sched_mq5.add_job(self.leer_voltaje, 'interval',
-                                   seconds=1, id="sched_mq5")
+                                   seconds=5, id="sched_mq5")
             self.sched_mq5.start()
 
         except (ValueError, OSError):
@@ -117,7 +117,7 @@ class MQ5:
         envien una señal.'''
 
         global alarma_mq5
-        print("Alarma activada")
+
         alarma_mq5 = 1
 
     def reiniciar_contadores(self):

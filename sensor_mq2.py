@@ -36,7 +36,7 @@ class MQ2:
     DOutput = Button(14)
 
     # Ro value of the sensor
-    ro = 7.325
+    ro = 4.107
 
     # Curva logaritmica con base 10
     HIDROGENO_CURVA = [2.301030, 0.322219, -0.473054]
@@ -71,7 +71,7 @@ class MQ2:
 
             self.sched_mq2 = BackgroundScheduler()
             self.sched_mq2.add_job(self.leer_voltaje, 'interval',
-                                   seconds=1, id="sched_mq2")
+                                   seconds=5, id="sched_mq2")
             self.sched_mq2.start()
 
         except (ValueError, OSError):
@@ -133,7 +133,7 @@ class MQ2:
         envien una señal.'''
 
         global alarma_mq2
-        print("Alarma activada")
+
         alarma_mq2 = 1
 
     def reiniciar_contadores(self):

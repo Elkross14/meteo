@@ -36,7 +36,7 @@ class MQ7:
     DOutput = Button(25)
 
     # Ro value of the sensor
-    ro = 0.421
+    ro = 0.096
 
     # Curva logaritmica con base 10
     HIDROGENO_CURVA = [1.698970, 0.133539, -0.619674]
@@ -64,7 +64,7 @@ class MQ7:
 
             self.sched_mq7 = BackgroundScheduler()
             self.sched_mq7.add_job(self.leer_voltaje, 'interval',
-                                   seconds=1, id="sched_mq7")
+                                   seconds=5, id="sched_mq7")
             self.sched_mq7.start()
 
         except (ValueError, OSError):
@@ -75,8 +75,6 @@ class MQ7:
     def leer_voltaje(self):
         '''leerá el voltaje cada cierto tiempo y lo irá acumulando, además
         lleva la cuenta de cuantos ciclos de lectura lleva.'''
-
-        print("lectura " + str(self.cantidad_muestras))
 
         # Evita que se rompa el programa en caso de que el ADC deje de funcionar a mitad
         # de una lectura de voltaje.
@@ -120,7 +118,6 @@ class MQ7:
         envien una señal.'''
 
         global alarma_mq7
-        print("Alarma activada")
         alarma_mq7 = 1
 
     def reiniciar_contadores(self):

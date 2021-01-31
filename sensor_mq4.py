@@ -36,7 +36,7 @@ class MQ4:
     DOutput = Button(23)
 
     # Constante de resistencia inicial
-    ro = 0.934
+    ro = 1.187
 
     # Curva logaritmica con base 10
     METANO_CURVA = [2.301030, 0.255273, -0.358375]
@@ -64,7 +64,7 @@ class MQ4:
 
             self.sched_mq4 = BackgroundScheduler()
             self.sched_mq4.add_job(self.leer_voltaje, 'interval',
-                                   seconds=1, id="sched_mq4")
+                                   seconds=5, id="sched_mq4")
             self.sched_mq4.start()
 
         except (ValueError, OSError):
@@ -81,6 +81,9 @@ class MQ4:
         try:
             self.voltaje_acumulado += self.channel.voltage
             self.cantidad_muestras += 1
+
+            print(str(self.voltaje_acumulado) +
+                  " || " + str(self.cantidad_muestras))
 
         except (ValueError, OSError):
             self.funcionamiento = False
@@ -118,7 +121,7 @@ class MQ4:
         envien una señal.'''
 
         global alarma_mq4
-        print("Alarma activada")
+
         alarma_mq4 = 1
 
     def reiniciar_contadores(self):

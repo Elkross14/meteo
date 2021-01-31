@@ -36,7 +36,7 @@ class MQ9:
     DOutput = Button(27)
 
     # Ro value of the sensor
-    ro = 0.999
+    ro = 0.326
 
     # Curva logaritmica con base 10
     CO_CURVA = [2.301030, 0.227887, -0.478819]
@@ -64,7 +64,7 @@ class MQ9:
 
             self.sched_mq9 = BackgroundScheduler()
             self.sched_mq9.add_job(self.leer_voltaje, 'interval',
-                                   seconds=1, id="sched_mq9")
+                                   seconds=5, id="sched_mq9")
             self.sched_mq9.start()
 
         except (ValueError, OSError):
@@ -118,7 +118,7 @@ class MQ9:
         envien una señal.'''
 
         global alarma_mq9
-        print("Alarma activada")
+
         alarma_mq9 = 1
 
     def reiniciar_contadores(self):

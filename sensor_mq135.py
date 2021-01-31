@@ -36,7 +36,7 @@ class MQ135:
     DOutput = Button(22)
 
     # Ro value of the sensor
-    ro = 4.201
+    ro = 2.777
 
     # Curva logaritmica con base 10
     ACETONA_CURVA = [1, 0.178977, -0.319976]
@@ -66,7 +66,7 @@ class MQ135:
 
             self.sched_mq135 = BackgroundScheduler()
             self.sched_mq135.add_job(self.leer_voltaje, 'interval',
-                                     seconds=1, id="sched_mq135")
+                                     seconds=5, id="sched_mq135")
             self.sched_mq135.start()
 
         except (ValueError, OSError):
@@ -122,7 +122,7 @@ class MQ135:
         envien una señal.'''
 
         global alarma_mq135
-        print("Alarma activada")
+
         alarma_mq135 = 1
 
     def reiniciar_contadores(self):

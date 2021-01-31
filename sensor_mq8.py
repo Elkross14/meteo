@@ -35,7 +35,7 @@ class MQ8:
     DOutput = Button(17)
 
     # Ro value of the sensor
-    ro = 0.161
+    ro = 0.059
 
     # Curva logaritmica con base 10
     HIDROGENO_CURVA = [2.301030, 0.932474, -1.453867]
@@ -61,7 +61,7 @@ class MQ8:
 
             self.sched_mq8 = BackgroundScheduler()
             self.sched_mq8.add_job(self.leer_voltaje, 'interval',
-                                   seconds=1, id="sched_mq8")
+                                   seconds=5, id="sched_mq8")
             self.sched_mq8.start()
 
         except (ValueError, OSError):
@@ -113,7 +113,7 @@ class MQ8:
         envien una señal.'''
 
         global alarma_mq8
-        print("Alarma activada")
+
         alarma_mq8 = 1
 
     def reiniciar_contadores(self):
