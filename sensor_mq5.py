@@ -35,7 +35,7 @@ class MQ5:
     DOutput = Button(24)
 
     # Ro value of the sensor
-    ro = 0.234
+    ro = 0.571
 
     # Curva logaritmica con base 10
     GPL_CURVA = [2.301030, -0.154902, -0.385390]

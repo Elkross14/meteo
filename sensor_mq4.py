@@ -36,7 +36,7 @@ class MQ4:
     DOutput = Button(23)
 
     # Constante de resistencia inicial
-    ro = 1.187
+    ro = 2.233
 
     # Curva logaritmica con base 10
     METANO_CURVA = [2.301030, 0.255273, -0.358375]

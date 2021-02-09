@@ -36,7 +36,7 @@ class MQ3:
     DOutput = Button(15)
 
     # Ro value of the sensor
-    ro = 0.113
+    ro = 0.181
 
     # Curva logaritmica con base 10
     ALCOHOL_CURVA = [-1, 0.357935, -0.471481]
