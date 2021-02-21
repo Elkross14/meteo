@@ -30,7 +30,7 @@ class Main:
 
         # nos guarda toda la información de lo ocurridoe en el programa
         logging.basicConfig(filename='registro.log',
-                            level=logging.INFO,
+                            level=logging.WARNING,
                             format='%(asctime)s %(message)s')
 
         self.llamar_constructores()
@@ -193,8 +193,7 @@ class Main:
 
         datos = ""
 
-        self.objeto_sensor_viento.calcular_velocidad_media()
-        self.objeto_sensor_viento.reiniciar_valores()
+        self.objeto_sensor_viento.finalizar_ciclo()
 
         datos = "velMediaViento=" + self.objeto_sensor_viento.get_vel_media()
         datos += "\&velRachaViento=" + self.objeto_sensor_viento.get_vel_max_racha()

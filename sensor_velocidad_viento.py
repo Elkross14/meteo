@@ -66,9 +66,14 @@ class VelocidadViento:
         # por el rozamiento del sensor de viento
         velocidad_real = velocidad * 1.18
 
-        # print("velocidad = " + str(velocidad_real) + "km/h")
-
         return velocidad_real
+
+    def finalizar_ciclo(self):
+        '''llama a los métodos necesarios para finalizar el ciclo de lectura y 
+        empezar uno nuevo'''
+
+        self.calcular_velocidad_media()
+        self.reiniciar_valores()
 
     def calcular_velocidad_media(self):
         '''Calcula la velocidad media registrada.'''
