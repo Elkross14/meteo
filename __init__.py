@@ -102,8 +102,6 @@ class Main:
         link += "\&" + self.leer_mq9()
         link += "\&" + self.leer_mq135()
 
-        print(link)
-
         return link
 
     @classmethod
@@ -111,9 +109,6 @@ class Main:
         '''Lee la fecha del sistema'''
 
         fecha_lectura = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-
-        print(" ")
-        print("fecha: " + fecha_lectura)
 
         return fecha_lectura.replace(" ", "%20")
 
@@ -222,15 +217,6 @@ class Main:
 
             self.objeto_sensor_mq2.finalizar_ciclo()
 
-            print("-----------------MQ2--------------------")
-            print("hidrogeno: " + self.objeto_sensor_mq2.get_hidrogeno())
-            print("Metano: " + self.objeto_sensor_mq2.get_metano())
-            print("Gpl: " + self.objeto_sensor_mq2.get_gpl())
-            print("Propano: " + self.objeto_sensor_mq2.get_propano())
-            print("Alcohol: " + self.objeto_sensor_mq2.get_alcohol())
-            print("Humo: " + self.objeto_sensor_mq2.get_humo())
-            print("Voltaje: " + self.objeto_sensor_mq2.get_voltaje())
-
             datos = "hidrogenoMQ2=" + self.objeto_sensor_mq2.get_hidrogeno()
             datos += "\&metanoMQ2=" + self.objeto_sensor_mq2.get_metano()
             datos += "\&gplMQ2=" + self.objeto_sensor_mq2.get_gpl()
@@ -259,11 +245,6 @@ class Main:
 
             self.objeto_sensor_mq3.finalizar_ciclo()
 
-            print("-----------------MQ3--------------------")
-            print("benceno: " + self.objeto_sensor_mq3.get_benceno())
-            print("Alcohol: " + self.objeto_sensor_mq3.get_alcohol())
-            print("Voltaje: " + self.objeto_sensor_mq3.get_voltaje())
-
             datos = "alcoholMQ3=" + self.objeto_sensor_mq3.get_alcohol()
             datos += "\&bencenoMQ3=" + self.objeto_sensor_mq3.get_benceno()
             datos += "\&alarmaMQ3=" + self.objeto_sensor_mq3.get_alarma()
@@ -287,11 +268,6 @@ class Main:
         if(self.objeto_sensor_mq4.get_funcionamiento()):
 
             self.objeto_sensor_mq4.finalizar_ciclo()
-
-            print("-----------------MQ4--------------------")
-            print("Metano: " + self.objeto_sensor_mq4.get_metano())
-            print("Gpl: " + self.objeto_sensor_mq4.get_gpl())
-            print("Voltaje: " + self.objeto_sensor_mq4.get_voltaje())
 
             datos = "metanoMQ4=" + self.objeto_sensor_mq4.get_metano()
             datos += "\&gplMQ4=" + self.objeto_sensor_mq4.get_gpl()
@@ -317,11 +293,6 @@ class Main:
 
             self.objeto_sensor_mq5.finalizar_ciclo()
 
-            print("-----------------MQ5--------------------")
-            print("Metano: " + self.objeto_sensor_mq5.get_metano())
-            print("Gpl: " + self.objeto_sensor_mq5.get_gpl())
-            print("Voltaje: " + self.objeto_sensor_mq5.get_voltaje())
-
             datos = "gplMQ5=" + self.objeto_sensor_mq5.get_gpl()
             datos += "\&metanoMQ5=" + self.objeto_sensor_mq5.get_metano()
             datos += "\&alarmaMQ5=" + self.objeto_sensor_mq5.get_alarma()
@@ -345,11 +316,6 @@ class Main:
         if(self.objeto_sensor_mq7.get_funcionamiento()):
 
             self.objeto_sensor_mq7.finalizar_ciclo()
-
-            print("-----------------MQ7--------------------")
-            print("hidrogeno: " + self.objeto_sensor_mq7.get_hidrogeno())
-            print("CO: " + self.objeto_sensor_mq7.get_co())
-            print("Voltaje: " + self.objeto_sensor_mq7.get_voltaje())
 
             datos = "hidrogenoMQ7=" + self.objeto_sensor_mq7.get_hidrogeno()
             datos += "\&coMQ7=" + self.objeto_sensor_mq7.get_co()
@@ -375,10 +341,6 @@ class Main:
 
             self.objeto_sensor_mq8.finalizar_ciclo()
 
-            print("-----------------MQ8--------------------")
-            print("hidrogeno: " + self.objeto_sensor_mq8.get_hidrogeno())
-            print("Voltaje: " + self.objeto_sensor_mq8.get_voltaje())
-
             datos = "hidrogenoMQ8=" + self.objeto_sensor_mq8.get_hidrogeno()
             datos += "\&alarmaMQ8=" + self.objeto_sensor_mq8.get_alarma()
             datos += "\&voltajeMQ8=" + self.objeto_sensor_mq8.get_voltaje()
@@ -401,11 +363,6 @@ class Main:
         if(self.objeto_sensor_mq9.get_funcionamiento()):
 
             self.objeto_sensor_mq9.finalizar_ciclo()
-
-            print("-----------------MQ9--------------------")
-            print("Gpl: " + self.objeto_sensor_mq9.get_gpl())
-            print("CO: " + self.objeto_sensor_mq9.get_co())
-            print("Voltaje: " + self.objeto_sensor_mq9.get_voltaje())
 
             datos = "coMQ9=" + self.objeto_sensor_mq9.get_co()
             datos += "\&gplMQ9=" + self.objeto_sensor_mq9.get_gpl()
@@ -430,12 +387,6 @@ class Main:
         if(self.objeto_sensor_mq135.get_funcionamiento()):
 
             self.objeto_sensor_mq135.finalizar_ciclo()
-
-            print("-----------------MQ135--------------------")
-            print("Acetona: " + self.objeto_sensor_mq135.get_acetona())
-            print("Tolueno: " + self.objeto_sensor_mq135.get_tolueno())
-            print("Alcohol: " + self.objeto_sensor_mq135.get_alcohol())
-            print("Voltaje: " + self.objeto_sensor_mq135.get_voltaje())
 
             datos = "acetonaMQ135=" + self.objeto_sensor_mq135.get_acetona()
             datos += "\&toluenoMQ135=" + self.objeto_sensor_mq135.get_tolueno()
