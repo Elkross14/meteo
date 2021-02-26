@@ -29,7 +29,8 @@ class Calculos:
 
         return float(resistencia * (4.9 - float(voltaje)) / float(voltaje))
 
-    def calcular_ppm(self, ratio, curva_gas):
+    @classmethod
+    def calcular_ppm(cls, ratio, curva_gas):
         '''Mediante calculos logaritmicos nos devuelve los ppm de un gas
         en particular.'''
 
