@@ -1,10 +1,10 @@
 from datetime import datetime
-import os
 import logging
 import time
 from apscheduler.schedulers.background import BackgroundScheduler
 
 from acceso_web import AccesoWeb
+import requests
 
 from sensor_sht31 import Sht31
 from sensor_bmp180 import Bmp180
@@ -69,40 +69,37 @@ class Main:
     def iniciar_ciclo(self):
         '''Recoge los datos de los sensores y envía los datos al servidor'''
 
-        link = self.recoger_datos()
+        acceso_web = AccesoWeb()
 
-        self.enviar_datos(link)
+        link = acceso_web.get_dominio() + acceso_web.get_clave_servidor()
+        link += self.leer_fecha()
 
-        time.sleep(1800)
+        datos = self.recoger_datos()
 
-        self.cerrar_navegador()
+        self.enviar_datos(link, datos)
 
     def recoger_datos(self):
         '''Recoge los datos de todos los sensores y los devuelve en una cadena
         junto a la fecha.'''
 
-        acceso_web = AccesoWeb()
+        datos = {}
+        datos = {**datos, **self.leer_sht31(0x44)}  # Temperatura ambiental
+        datos = {**datos, **self.leer_bmp180()}
+        datos = {**datos, **self.leer_tsl2561()}
+        datos = {**datos, **self.leer_direccion_viento()}
+        datos = {**datos, **self.leer_viento()}
+        datos = {**datos, **self.leer_lluvia()}
+        datos = {**datos, **self.leer_sht31(0x45)}  # Temperatura caja de gases
+        datos = {**datos, **self.leer_mq2()}
+        datos = {**datos, **self.leer_mq3()}
+        datos = {**datos, **self.leer_mq4()}
+        datos = {**datos, **self.leer_mq5()}
+        datos = {**datos, **self.leer_mq7()}
+        datos = {**datos, **self.leer_mq8()}
+        datos = {**datos, **self.leer_mq9()}
+        datos = {**datos, **self.leer_mq135()}
 
-        link = acceso_web.get_dominio() + acceso_web.get_clave_servidor()
-
-        link += self.leer_fecha() + "?"
-        link += "\&" + self.leer_sht31(0x44)  # Temperatura ambiental
-        link += "\&" + self.leer_bmp180()
-        link += "\&" + self.leer_tsl2561()
-        link += "\&" + self.leer_direccion_viento()
-        link += "\&" + self.leer_viento()
-        link += "\&" + self.leer_lluvia()
-        link += "\&" + self.leer_sht31(0x45)  # Temperatura caja de gases
-        link += "\&" + self.leer_mq2()
-        link += "\&" + self.leer_mq3()
-        link += "\&" + self.leer_mq4()
-        link += "\&" + self.leer_mq5()
-        link += "\&" + self.leer_mq7()
-        link += "\&" + self.leer_mq8()
-        link += "\&" + self.leer_mq9()
-        link += "\&" + self.leer_mq135()
-
-        return link
+        return datos
 
     @classmethod
     def leer_fecha(cls):
@@ -116,19 +113,19 @@ class Main:
     def leer_sht31(cls, address):
         '''Lee los datos del sensor sht31'''
 
-        datos = ""
+        datos = {}
 
         objeto_sht31 = Sht31(address)
 
         if (address == 0x44):
 
-            datos = "temperaturaSHT31=" + objeto_sht31.get_temperatura()
-            datos += "\&humedadSHT31=" + objeto_sht31.get_humedad()
+            datos["temperaturaSHT31"] = objeto_sht31.get_temperatura()
+            datos["humedadSHT31"] = objeto_sht31.get_humedad()
 
         else:
 
-            datos = "temperaturaSHT31gas=" + objeto_sht31.get_temperatura()
-            datos += "\&humedadSHT31gas=" + objeto_sht31.get_humedad()
+            datos["temperaturaSHT31gas"] = objeto_sht31.get_temperatura()
+            datos["humedadSHT31gas"] = objeto_sht31.get_humedad()
 
         del objeto_sht31
 
@@ -139,13 +136,13 @@ class Main:
         '''Crea el objeto del sensor Bmp180 y recoge la presión, temperatura
         y altura'''
 
-        datos = ""
+        datos = {}
 
         objeto_bmp180 = Bmp180()
 
-        datos = "presionBMP180=" + objeto_bmp180.get_presion()
-        datos += "\&temperaturaBMP180=" + objeto_bmp180.get_temperatura()
-        datos += "\&alturaBMP180=" + objeto_bmp180.get_altura()
+        datos["presionBMP180"] = objeto_bmp180.get_presion()
+        datos["temperaturaBMP180"] = objeto_bmp180.get_temperatura()
+        datos["alturaBMP180"] = objeto_bmp180.get_altura()
 
         return datos
 
@@ -154,13 +151,13 @@ class Main:
         '''Crea un objeto del sensor Tsl2561 y recoge la luz total, luz infrarroja
         y luz visible'''
 
-        datos = ""
+        datos = {}
 
         objeto_tsl2561 = Tsl2561()
 
-        datos = "luzTotalTSL2561=" + objeto_tsl2561.get_luz_total()
-        datos += "\&luzInfrarrojaTSL2561=" + objeto_tsl2561.get_luz_infrarroja()
-        datos += "\&luzVisibleTSL2561=" + objeto_tsl2561.get_luz_visible()
+        datos["luzTotalTSL2561"] = objeto_tsl2561.get_luz_total()
+        datos["luzInfrarrojaTSL2561"] = objeto_tsl2561.get_luz_infrarroja()
+        datos["luzVisibleTSL2561"] = objeto_tsl2561.get_luz_visible()
 
         return datos
 
@@ -168,16 +165,16 @@ class Main:
     def leer_direccion_viento(cls):
         '''Lee la dirección del viento.'''
 
-        datos = ""
+        datos = {}
 
         objeto_veleta = Veleta()
 
         if(objeto_veleta.get_funcionamiento()):
 
-            datos = "direccionVeleta=" + objeto_veleta.get_direccion()
+            datos["direccionVeleta"] = objeto_veleta.get_direccion()
 
         else:  # El sensor no funciona
-            datos = "funcionamientoVeleta=False"
+            datos["funcionamientoVeleta"] = False
 
         del objeto_veleta
 
@@ -186,48 +183,48 @@ class Main:
     def leer_viento(self):
         '''Lee la velocidad máxima de racha y la velocidad media del viento.'''
 
-        datos = ""
+        datos = {}
 
         self.objeto_sensor_viento.finalizar_ciclo()
 
-        datos = "velMediaViento=" + self.objeto_sensor_viento.get_vel_media()
-        datos += "\&velRachaViento=" + self.objeto_sensor_viento.get_vel_max_racha()
+        datos["velMediaViento"] = self.objeto_sensor_viento.get_vel_media()
+        datos["velRachaViento"] = self.objeto_sensor_viento.get_vel_max_racha()
 
         return datos
 
     def leer_lluvia(self):
         '''Lee la cantidad de litros por metro cuadrado que ha llovido'''
 
-        datos = ""
+        datos = {}
 
         self.objeto_sensor_lluvia.calcular_lluvia()
         self.objeto_sensor_lluvia.reiniciar_valores()
 
-        datos = "lluvia=" + self.objeto_sensor_lluvia.get_litros()
+        datos["lluvia"] = self.objeto_sensor_lluvia.get_litros()
 
         return datos
 
     def leer_mq2(self):
         '''Lee los datos del sensor mq2'''
 
-        datos = ""
+        datos = {}
 
         # Comprueba si el sensor funciona
         if(self.objeto_sensor_mq2.get_funcionamiento()):
 
             self.objeto_sensor_mq2.finalizar_ciclo()
 
-            datos = "hidrogenoMQ2=" + self.objeto_sensor_mq2.get_hidrogeno()
-            datos += "\&metanoMQ2=" + self.objeto_sensor_mq2.get_metano()
-            datos += "\&gplMQ2=" + self.objeto_sensor_mq2.get_gpl()
-            datos += "\&propanoMQ2=" + self.objeto_sensor_mq2.get_propano()
-            datos += "\&alcoholMQ2=" + self.objeto_sensor_mq2.get_alcohol()
-            datos += "\&humoMQ2=" + self.objeto_sensor_mq2.get_humo()
-            datos += "\&alarmaMQ2=" + self.objeto_sensor_mq2.get_alarma()
-            datos += "\&voltajeMQ2=" + self.objeto_sensor_mq2.get_voltaje()
+            datos["hidrogenoMQ2"] = self.objeto_sensor_mq2.get_hidrogeno()
+            datos["metanoMQ2"] = self.objeto_sensor_mq2.get_metano()
+            datos["gplMQ2"] = self.objeto_sensor_mq2.get_gpl()
+            datos["propanoMQ2"] = self.objeto_sensor_mq2.get_propano()
+            datos["alcoholMQ2"] = self.objeto_sensor_mq2.get_alcohol()
+            datos["humoMQ2"] = self.objeto_sensor_mq2.get_humo()
+            datos["alarmaMQ2"] = self.objeto_sensor_mq2.get_alarma()
+            datos["voltajeMQ2"] = self.objeto_sensor_mq2.get_voltaje()
 
         else:  # El sensor no funciona
-            datos = "funcionamientoMQ2=False"
+            datos["funcionamientoMQ2"] = False
 
             del self.objeto_sensor_mq2
 
@@ -238,20 +235,20 @@ class Main:
     def leer_mq3(self):
         '''Lee los datos del sensor mq3'''
 
-        datos = ""
+        datos = {}
 
         # Comprueba si el sensor funciona
         if(self.objeto_sensor_mq3.get_funcionamiento()):
 
             self.objeto_sensor_mq3.finalizar_ciclo()
 
-            datos = "alcoholMQ3=" + self.objeto_sensor_mq3.get_alcohol()
-            datos += "\&bencenoMQ3=" + self.objeto_sensor_mq3.get_benceno()
-            datos += "\&alarmaMQ3=" + self.objeto_sensor_mq3.get_alarma()
-            datos += "\&voltajeMQ3=" + self.objeto_sensor_mq3.get_voltaje()
+            datos["alcoholMQ3"] = self.objeto_sensor_mq3.get_alcohol()
+            datos["bencenoMQ3"] = self.objeto_sensor_mq3.get_benceno()
+            datos["alarmaMQ3"] = self.objeto_sensor_mq3.get_alarma()
+            datos["voltajeMQ3"] = self.objeto_sensor_mq3.get_voltaje()
 
         else:  # El sensor no funciona
-            datos = "funcionamientoMQ3=False"
+            datos["funcionamientoMQ3"] = False
 
             del self.objeto_sensor_mq3
 
@@ -262,20 +259,20 @@ class Main:
     def leer_mq4(self):
         '''Lee los datos del sensor mq4'''
 
-        datos = ""
+        datos = {}
 
         # Comprueba si el sensor funciona
         if(self.objeto_sensor_mq4.get_funcionamiento()):
 
             self.objeto_sensor_mq4.finalizar_ciclo()
 
-            datos = "metanoMQ4=" + self.objeto_sensor_mq4.get_metano()
-            datos += "\&gplMQ4=" + self.objeto_sensor_mq4.get_gpl()
-            datos += "\&alarmaMQ4=" + self.objeto_sensor_mq4.get_alarma()
-            datos += "\&voltajeMQ4=" + self.objeto_sensor_mq4.get_voltaje()
+            datos["metanoMQ4"] = self.objeto_sensor_mq4.get_metano()
+            datos["gplMQ4"] = self.objeto_sensor_mq4.get_gpl()
+            datos["alarmaMQ4"] = self.objeto_sensor_mq4.get_alarma()
+            datos["voltajeMQ4"] = self.objeto_sensor_mq4.get_voltaje()
 
         else:  # El sensor no funciona
-            datos = "funcionamientoMQ4=False"
+            datos["funcionamientoMQ4"] = False
 
             del self.objeto_sensor_mq4
 
@@ -286,20 +283,20 @@ class Main:
     def leer_mq5(self):
         '''Lee los datos del sensor mq5'''
 
-        datos = ""
+        datos = {}
 
         # Comprueba si el sensor funciona
         if(self.objeto_sensor_mq5.get_funcionamiento()):
 
             self.objeto_sensor_mq5.finalizar_ciclo()
 
-            datos = "gplMQ5=" + self.objeto_sensor_mq5.get_gpl()
-            datos += "\&metanoMQ5=" + self.objeto_sensor_mq5.get_metano()
-            datos += "\&alarmaMQ5=" + self.objeto_sensor_mq5.get_alarma()
-            datos += "\&voltajeMQ5=" + self.objeto_sensor_mq5.get_voltaje()
+            datos["gplMQ5"] = self.objeto_sensor_mq5.get_gpl()
+            datos["metanoMQ5"] = self.objeto_sensor_mq5.get_metano()
+            datos["alarmaMQ5"] = self.objeto_sensor_mq5.get_alarma()
+            datos["voltajeMQ5"] = self.objeto_sensor_mq5.get_voltaje()
 
         else:  # El sensor no funciona
-            datos = "funcionamientoMQ5=False"
+            datos["funcionamientoMQ5"] = False
 
             del self.objeto_sensor_mq5
 
@@ -310,20 +307,20 @@ class Main:
     def leer_mq7(self):
         '''Lee los datos del sensor mq7'''
 
-        datos = ""
+        datos = {}
 
         # Comprueba si el sensor funciona
         if(self.objeto_sensor_mq7.get_funcionamiento()):
 
             self.objeto_sensor_mq7.finalizar_ciclo()
 
-            datos = "hidrogenoMQ7=" + self.objeto_sensor_mq7.get_hidrogeno()
-            datos += "\&coMQ7=" + self.objeto_sensor_mq7.get_co()
-            datos += "\&alarmaMQ7=" + self.objeto_sensor_mq7.get_alarma()
-            datos += "\&voltajeMQ7=" + self.objeto_sensor_mq7.get_voltaje()
+            datos["hidrogenoMQ7"] = self.objeto_sensor_mq7.get_hidrogeno()
+            datos["coMQ7"] = self.objeto_sensor_mq7.get_co()
+            datos["alarmaMQ7"] = self.objeto_sensor_mq7.get_alarma()
+            datos["voltajeMQ7"] = self.objeto_sensor_mq7.get_voltaje()
 
         else:  # El sensor no funciona
-            datos = "funcionamientoMQ7=False"
+            datos["funcionamientoMQ7"] = False
 
             del self.objeto_sensor_mq7
 
@@ -334,19 +331,19 @@ class Main:
     def leer_mq8(self):
         '''Lee los datos del sensor mq8'''
 
-        datos = ""
+        datos = {}
 
         # Comprueba si el sensor funciona
         if(self.objeto_sensor_mq8.get_funcionamiento()):
 
             self.objeto_sensor_mq8.finalizar_ciclo()
 
-            datos = "hidrogenoMQ8=" + self.objeto_sensor_mq8.get_hidrogeno()
-            datos += "\&alarmaMQ8=" + self.objeto_sensor_mq8.get_alarma()
-            datos += "\&voltajeMQ8=" + self.objeto_sensor_mq8.get_voltaje()
+            datos["hidrogenoMQ8"] = self.objeto_sensor_mq8.get_hidrogeno()
+            datos["alarmaMQ8"] = self.objeto_sensor_mq8.get_alarma()
+            datos["voltajeMQ8"] = self.objeto_sensor_mq8.get_voltaje()
 
         else:  # El sensor no funciona
-            datos = "funcionamientoMQ8=False"
+            datos["funcionamientoMQ8"] = False
 
             del self.objeto_sensor_mq8
 
@@ -357,20 +354,20 @@ class Main:
     def leer_mq9(self):
         '''Lee los datos del sensor mq9'''
 
-        datos = ""
+        datos = {}
 
         # Comprueba si el sensor funciona
         if(self.objeto_sensor_mq9.get_funcionamiento()):
 
             self.objeto_sensor_mq9.finalizar_ciclo()
 
-            datos = "coMQ9=" + self.objeto_sensor_mq9.get_co()
-            datos += "\&gplMQ9=" + self.objeto_sensor_mq9.get_gpl()
-            datos += "\&alarmaMQ9=" + self.objeto_sensor_mq9.get_alarma()
-            datos += "\&voltajeMQ9=" + self.objeto_sensor_mq9.get_voltaje()
+            datos["coMQ9"] = self.objeto_sensor_mq9.get_co()
+            datos["gplMQ9"] = self.objeto_sensor_mq9.get_gpl()
+            datos["alarmaMQ9"] = self.objeto_sensor_mq9.get_alarma()
+            datos["voltajeMQ9"] = self.objeto_sensor_mq9.get_voltaje()
 
         else:  # El sensor no funciona
-            datos = "funcionamientoMQ9=False"
+            datos["funcionamientoMQ9"] = False
 
             del self.objeto_sensor_mq9
 
@@ -381,21 +378,21 @@ class Main:
     def leer_mq135(self):
         '''Lee los datos del sensor mq135'''
 
-        datos = ""
+        datos = {}
 
         # Comprueba si el sensor funciona
         if(self.objeto_sensor_mq135.get_funcionamiento()):
 
             self.objeto_sensor_mq135.finalizar_ciclo()
 
-            datos = "acetonaMQ135=" + self.objeto_sensor_mq135.get_acetona()
-            datos += "\&toluenoMQ135=" + self.objeto_sensor_mq135.get_tolueno()
-            datos += "\&alcoholMQ135=" + self.objeto_sensor_mq135.get_alcohol()
-            datos += "\&alarmaMQ135=" + self.objeto_sensor_mq135.get_alarma()
-            datos += "\&voltajeMQ135=" + self.objeto_sensor_mq135.get_voltaje()
+            datos["acetonaMQ135"] = self.objeto_sensor_mq135.get_acetona()
+            datos["toluenoMQ135"] = self.objeto_sensor_mq135.get_tolueno()
+            datos["alcoholMQ135"] = self.objeto_sensor_mq135.get_alcohol()
+            datos["alarmaMQ135"] = self.objeto_sensor_mq135.get_alarma()
+            datos["voltajeMQ135"] = self.objeto_sensor_mq135.get_voltaje()
 
         else:  # El sensor no funciona
-            datos = "funcionamientoMQ135=False"
+            datos["funcionamientoMQ135"] = False
 
             del self.objeto_sensor_mq135
 
@@ -403,18 +400,10 @@ class Main:
 
         return datos
 
-    def enviar_datos(self, link):
-        '''Le pasamos el link con los datos a enviar al servidor.
-        Abre una ventana del navegador y escribe la URL.'''
+    def enviar_datos(self, link, datos):
+        '''Envia los datos al servidor'''
 
-        command_line = 'DISPLAY=:0 firefox ' + link + ' &'
-
-        os.system(command_line)
-
-    def cerrar_navegador(self):
-        '''Cierra el navegado que se está usando para enviar los datos'''
-
-        os.system("pkill firefox")
+        requests.get(link, params=datos, timeout=300)
 
 
 meteo = Main()

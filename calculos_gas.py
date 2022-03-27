@@ -10,14 +10,16 @@ class Calculos:
     def calcular_voltaje(cls, voltaje_acumulado, cantidad_muestras):
         ''' Calcula el voltaje de media leido en un intervalo de tiempo'''
 
-        voltaje = voltaje_acumulado / cantidad_muestras
+        voltaje = 0
+        if (cantidad_muestras != 0):
+            voltaje = voltaje_acumulado / cantidad_muestras
 
-        # en el caso de que el sensor no funcione te ponemos un valor
-        # artificial en el voltaje para que el programa pueda seguir
-        # funcionando.
-        if(voltaje <= 0):
-            voltaje = 0.001
-            logging.error('Sensor de gas inutilizado')
+            # en el caso de que el sensor no funcione te ponemos un valor
+            # artificial en el voltaje para que el programa pueda seguir
+            # funcionando.
+            if(voltaje <= 0):
+                voltaje = 0.001
+                logging.error('Sensor de gas inutilizado')
 
         return voltaje
 
@@ -27,7 +29,12 @@ class Calculos:
         la resistentencia que te tendrá el sensor. Esta resistencia se
         representa como Rs.'''
 
-        return float(resistencia * (4.9 - float(voltaje)) / float(voltaje))
+        resultado = 0
+
+        if (voltaje != 0):
+            resultado = float(
+                resistencia * (4.9 - float(voltaje)) / float(voltaje))
+        return resultado
 
     @classmethod
     def calcular_ppm(cls, ratio, curva_gas):
