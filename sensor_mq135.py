@@ -36,7 +36,7 @@ class MQ135:
     DOutput = Button(22)
 
     # Ro value of the sensor
-    ro = 5.941
+    ro = 1.521
 
     # Curva logaritmica con base 10
     ACETONA_CURVA = [1, 0.178977, -0.319976]

@@ -36,11 +36,11 @@ class MQ4:
     DOutput = Button(23)
 
     # Constante de resistencia inicial
-    ro = 2.233
+    ro = 0.733
 
     # Curva logaritmica con base 10
-    METANO_CURVA = [2.301030, 0.255273, -0.358375]
-    GPL_CURVA = [2.301030, 0.414973, -0.323649]
+    METANO_CURVA = [2.301030, 0.255273, -0.385390]
+    GPL_CURVA = [2.301030, 0.414973, -0.386798]
 
     # gas en ppm
     metano_ppm = 0

@@ -30,7 +30,7 @@ class Main:
 
         # nos guarda toda la información de lo ocurridoe en el programa
         logging.basicConfig(filename='registro.log',
-                            level=logging.WARNING,
+                            level=logging.ERROR,
                             format='%(asctime)s %(message)s')
 
         self.llamar_constructores()
@@ -403,6 +403,7 @@ class Main:
     def enviar_datos(self, link, datos):
         '''Envia los datos al servidor'''
 
+        logging.debug(datos)
         requests.get(link, params=datos, timeout=300)
 
 

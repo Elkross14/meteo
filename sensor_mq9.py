@@ -36,7 +36,7 @@ class MQ9:
     DOutput = Button(27)
 
     # Ro value of the sensor
-    ro = 1.014
+    ro = 0.943
 
     # Curva logaritmica con base 10
     CO_CURVA = [2.301030, 0.227887, -0.478819]

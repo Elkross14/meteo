@@ -35,7 +35,7 @@ class MQ8:
     DOutput = Button(17)
 
     # Ro value of the sensor
-    ro = 0.130
+    ro = 0.051
 
     # Curva logaritmica con base 10
     HIDROGENO_CURVA = [2.301030, 0.932474, -1.453867]
