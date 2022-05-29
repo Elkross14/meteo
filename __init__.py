@@ -8,6 +8,7 @@ import requests
 
 from sensor_sht31 import Sht31
 from sensor_bmp180 import Bmp180
+from sensor_bmp280 import Bmp280
 from sensor_tsl2561 import Tsl2561
 from sensor_veleta import Veleta
 from sensor_velocidad_viento import VelocidadViento
@@ -79,12 +80,12 @@ class Main:
         self.enviar_datos(link, datos)
 
     def recoger_datos(self):
-        '''Recoge los datos de todos los sensores y los devuelve en una cadena
-        junto a la fecha.'''
+        '''Recoge los datos de todos los sensores y los devuelve en un json.'''
 
         datos = {}
         datos = {**datos, **self.leer_sht31(0x44)}  # Temperatura ambiental
-        datos = {**datos, **self.leer_bmp180()}
+        #datos = {**datos, **self.leer_bmp180()}
+        #datos = {**datos, **self.leer_bmp280()}
         datos = {**datos, **self.leer_tsl2561()}
         datos = {**datos, **self.leer_direccion_viento()}
         datos = {**datos, **self.leer_viento()}
@@ -143,6 +144,20 @@ class Main:
         datos["presionBMP180"] = objeto_bmp180.get_presion()
         datos["temperaturaBMP180"] = objeto_bmp180.get_temperatura()
         datos["alturaBMP180"] = objeto_bmp180.get_altura()
+
+        return datos
+
+    @classmethod
+    def leer_bmp280(cls):
+        '''Crea el objeto del sensor Bmp280 y recoge la presión, temperatura
+        y altura'''
+
+        datos = {}
+
+        objeto_bmp280 = Bmp280()
+
+        datos["presionBMP180"] = objeto_bmp280.get_presion()
+        datos["temperaturaBMP180"] = objeto_bmp280.get_temperatura()
 
         return datos
 

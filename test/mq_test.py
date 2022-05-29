@@ -14,8 +14,8 @@ from gpiozero import Button
 
 
 # direccion I2C del ADS11115
-ADDRESS = 0x49# address conectado a VDD
-PIN = 0# canal analógico del chip
+ADDRESS = 0x4a  # address conectado a VDD
+PIN = 3  # canal analógico del chip
 
 convertor = ads1115.ADS1115
 
